@@ -1,14 +1,7 @@
-
-from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
 from datetime import datetime
 
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
+db = SQLAlchemy()
 
 class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -34,6 +27,7 @@ class Producto(db.Model):
 
     def __str__(self):
         return f'{self.nombre} - ${self.precio}'
+    
  
 class CategoriaProducto(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -176,15 +170,3 @@ class Empleado(db.Model):
     def __str__(self):
         return f'{self.nombre} - {self.puesto}'
 
-
-@app.route('/')
-def index():
-    return render_template("index.html")
-
-@app.route('/usuarios')
-def usuarios():
-    usuarios = Usuario.query.all()
-    return render_template('usuarios.html', usuarios=usuarios)
-
-if __name__ == '__main__':
-    app.run(debug=True)

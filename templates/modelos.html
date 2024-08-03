@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos</title>
+</head>
+<body>
+    <h1>Lista de todos los Modelos que ofrecemos</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre del Modelo</th>
+                <th>Marca ID</th>
+                <th>Fabricante ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for modelo in modelos %}
+            <tr>
+                <td>{{ modelo.id }}</td>
+                <td>{{ modelo.nombre_modelo }}</td>
+                <td>{{ modelo.marca_id }}</td>
+                <td>{{ modelo.fabricante_id }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('main.index') }}">Volver al inicio</a>
+</body>
+</html>

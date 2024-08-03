@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Bienvenido a la Aplicación</h1>
+    <ul>
+        <li><a href="{{ url_for('main.usuarios') }}">Usuarios</a></li>
+        <li><a href="{{ url_for('main.productos') }}">Productos</a></li>
+        <li><a href="{{ url_for('main.categorias') }}">Categorías</a></li>
+        <li><a href="{{ url_for('main.marcas') }}">Marcas</a></li>
+        <li><a href="{{ url_for('main.fabricantes') }}">Fabricantes</a></li>
+        <li><a href="{{ url_for('main.modelos') }}">Modelos</a></li>
+        <li><a href="{{ url_for('main.caracteristicas') }}">Características</a></li>
+        <li><a href="{{ url_for('main.equipos') }}">Equipos</a></li>
+        <li><a href="{{ url_for('main.stocks') }}">Stocks</a></li>
+        <li><a href="{{ url_for('main.proveedores') }}">Proveedores</a></li>
+        <li><a href="{{ url_for('main.accesorios') }}">Accesorios</a></li>
+        <li><a href="{{ url_for('main.empleados') }}">Empleados</a></li>
+    </ul>
+</body>
+</html>
