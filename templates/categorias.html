@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -28,3 +29,17 @@
     <a href="{{ url_for('main.index') }}">Volver al inicio</a>
 </body>
 </html>
+=======
+{% extends 'base.html' %}
+
+{% block title %}Categories{% endblock %}
+
+{% block content %}
+<h1>Categories</h1>
+<ul>
+    {% for category in categories %}
+    <li>{{ category.name }}: {{ category.description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+>>>>>>> e83090d04ebdc1bb24daa09c1f0f9eee7a04fcff

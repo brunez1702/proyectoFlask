@@ -1,5 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from.model import categoria
 
 db = SQLAlchemy()
 
@@ -170,3 +171,62 @@ class Empleado(db.Model):
     def __str__(self):
         return f'{self.nombre} - {self.puesto}'
 
+<<<<<<< HEAD:app/model.py
+=======
+
+@app.route('/')
+def index():
+    return render_template("index.html")
+
+@app.route('/usuarios')
+def usuarios():
+    usuarios = Usuario.query.all()
+    return render_template('usuarios.html', usuarios=usuarios)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+
+
+
+from flask import Blueprint, render_template
+from .models import Category, Model
+
+bp = Blueprint('main', __name__)
+
+@bp.route('/')
+def home():
+    return render_template('home.html')
+
+@bp.route('/categories')
+def categories():
+    categories = Category.query.all()
+    return render_template('categories.html', categories=categories)
+
+@bp.route('/models')
+def models():
+    models = Model.query.all()
+    return render_template('models.html', models=models)
+
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+
+db = SQLAlchemy()
+migrate = Migrate()
+
+def create_app():
+    app = Flask(__name__)
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+    db.init_app(app)
+    migrate.init_app(app, db)
+
+    from . import routes
+    app.register_blueprint(routes.bp)
+
+    return app
+>>>>>>> e83090d04ebdc1bb24daa09c1f0f9eee7a04fcff:app.py
