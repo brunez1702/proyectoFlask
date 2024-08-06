@@ -1,6 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-from.model import categoria
 
 db = SQLAlchemy()
 
