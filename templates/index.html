@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Items List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
 </head>
@@ -20,6 +21,24 @@
         <li><a href="{{ url_for('main.proveedores') }}">Proveedores</a></li>
         <li><a href="{{ url_for('main.accesorios') }}">Accesorios</a></li>
         <li><a href="{{ url_for('main.empleados') }}">Empleados</a></li>
+    
+    
+
+
+        <h1>Items List</h1>
+        <a href="{{ url_for('new_item') }}">Add New Item</a>
+        <ul>
+            {% for item in items %}
+            <li>
+                {{ item.name }}
+                <a href="{{ url_for('edit_item', item_id=item.id) }}">Edit</a>
+                <form action="{{ url_for('delete_item', item_id=item.id) }}" method="post" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+            {% endfor %}
+
+            
     </ul>
 </body>
 </html>
