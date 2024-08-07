@@ -1,12 +1,15 @@
-{% extends 'base.html' %}
+from flask_sqlalchemy import SQLAlchemy
 
-{% block title %}Models{% endblock %}
+db = SQLAlchemy()
 
-{% block content %}
-<h1>Models</h1>
-<ul>
-    {% for model in models %}
-    <li>{{ model.name }} ({{ model.category.name }}): ${{ model.cost }}</li>
-    {% endfor %}
-</ul>
-{% endblock %}
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    bio = db.Column(db.String(200))  # Nuevo campo
+
+
+    class Item(db.Model):
+         id = db.Column(db.Integer, primary_key=True)
+         name = db.Column(db.String(100), nullable=False)
+         description = db.Column(db.Text, nullable=True)
