@@ -1,0 +1,1334 @@
+[1mdiff --git a/.entorno/Scripts/python.exe b/.entorno/Scripts/python.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2814628[m
+Binary files /dev/null and b/.entorno/Scripts/python.exe differ
+[1mdiff --git a/.entorno/Scripts/pythonw.exe b/.entorno/Scripts/pythonw.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6d716fd[m
+Binary files /dev/null and b/.entorno/Scripts/pythonw.exe differ
+[1mdiff --git a/.entorno/pyvenv.cfg b/.entorno/pyvenv.cfg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..da164ed[m
+[1m--- /dev/null[m
+[1m+++ b/.entorno/pyvenv.cfg[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32mhome = C:\Users\Silvia\AppData\Local\Programs\Python\Python311[m
+[32m+[m[32minclude-system-site-packages = false[m
+[32m+[m[32mversion = 3.11.2[m
+[32m+[m[32mexecutable = C:\Users\Silvia\AppData\Local\Programs\Python\Python311\python.exe[m
+[32m+[m[32mcommand = C:\Users\Silvia\AppData\Local\Programs\Python\Python311\python.exe -m venv D:\itec\efiflask\proyectoFlask\.entorno[m
+[1mdiff --git a/.venv/Scripts/python.exe b/.venv/Scripts/python.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2814628[m
+Binary files /dev/null and b/.venv/Scripts/python.exe differ
+[1mdiff --git a/.venv/Scripts/pythonw.exe b/.venv/Scripts/pythonw.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6d716fd[m
+Binary files /dev/null and b/.venv/Scripts/pythonw.exe differ
+[1mdiff --git a/.venv/pyvenv.cfg b/.venv/pyvenv.cfg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4801f4f[m
+[1m--- /dev/null[m
+[1m+++ b/.venv/pyvenv.cfg[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32mhome = C:\Users\Silvia\AppData\Local\Programs\Python\Python311[m
+[32m+[m[32minclude-system-site-packages = false[m
+[32m+[m[32mversion = 3.11.2[m
+[32m+[m[32mexecutable = C:\Users\Silvia\AppData\Local\Programs\Python\Python311\python.exe[m
+[32m+[m[32mcommand = C:\Users\Silvia\AppData\Local\Programs\Python\Python311\python.exe -m venv D:\itec\efiflask\proyectoFlask\.venv[m
+[1mdiff --git a/__pycache__/app.cpython-310.pyc b/__pycache__/app.cpython-310.pyc[m
+[1mindex 312f1cd..7a6ec78 100644[m
+Binary files a/__pycache__/app.cpython-310.pyc and b/__pycache__/app.cpython-310.pyc differ
+[1mdiff --git a/__pycache__/extensions.cpython-310.pyc b/__pycache__/extensions.cpython-310.pyc[m
+[1mindex bc9b500..a8bbd54 100644[m
+Binary files a/__pycache__/extensions.cpython-310.pyc and b/__pycache__/extensions.cpython-310.pyc differ
+[1mdiff --git a/__pycache__/model.cpython-310.pyc b/__pycache__/model.cpython-310.pyc[m
+[1mindex 57acacc..cab3fa3 100644[m
+Binary files a/__pycache__/model.cpython-310.pyc and b/__pycache__/model.cpython-310.pyc differ
+[1mdiff --git a/__pycache__/routes.cpython-310.pyc b/__pycache__/routes.cpython-310.pyc[m
+[1mindex 548e6e1..53e39d5 100644[m
+Binary files a/__pycache__/routes.cpython-310.pyc and b/__pycache__/routes.cpython-310.pyc differ
+[1mdiff --git a/entorno/Scripts/python.exe b/entorno/Scripts/python.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2814628[m
+Binary files /dev/null and b/entorno/Scripts/python.exe differ
+[1mdiff --git a/entorno/Scripts/pythonw.exe b/entorno/Scripts/pythonw.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6d716fd[m
+Binary files /dev/null and b/entorno/Scripts/pythonw.exe differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/INSTALLER b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/INSTALLER[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a1b589e[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/INSTALLER[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mpip[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/METADATA b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/METADATA[m
+[1mnew file mode 100644[m
+[1mindex 0000000..92f1ff2[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/METADATA[m
+[36m@@ -0,0 +1,72 @@[m
+[32m+[m[32mMetadata-Version: 2.1[m
+[32m+[m[32mName: Flask-WTF[m
+[32m+[m[32mVersion: 1.2.1[m
+[32m+[m[32mSummary: Form rendering, validation, and CSRF protection for Flask with WTForms.[m
+[32m+[m[32mProject-URL: Documentation, https://flask-wtf.readthedocs.io/[m
+[32m+[m[32mProject-URL: Changes, https://flask-wtf.readthedocs.io/changes/[m
+[32m+[m[32mProject-URL: Source Code, https://github.com/wtforms/flask-wtf/[m
+[32m+[m[32mProject-URL: Issue Tracker, https://github.com/wtforms/flask-wtf/issues/[m
+[32m+[m[32mProject-URL: Chat, https://discord.gg/pallets[m
+[32m+[m[32mMaintainer: WTForms[m
+[32m+[m[32mLicense: Copyright 2010 WTForms[m
+[32m+[m[41m        [m
+[32m+[m[32m        Redistribution and use in source and binary forms, with or without[m
+[32m+[m[32m        modification, are permitted provided that the following conditions are[m
+[32m+[m[32m        met:[m
+[32m+[m[41m        [m
+[32m+[m[32m        1.  Redistributions of source code must retain the above copyright[m
+[32m+[m[32m            notice, this list of conditions and the following disclaimer.[m
+[32m+[m[41m        [m
+[32m+[m[32m        2.  Redistributions in binary form must reproduce the above copyright[m
+[32m+[m[32m            notice, this list of conditions and the following disclaimer in the[m
+[32m+[m[32m            documentation and/or other materials provided with the distribution.[m
+[32m+[m[41m        [m
+[32m+[m[32m        3.  Neither the name of the copyright holder nor the names of its[m
+[32m+[m[32m            contributors may be used to endorse or promote products derived from[m
+[32m+[m[32m            this software without specific prior written permission.[m
+[32m+[m[41m        [m
+[32m+[m[32m        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS[m
+[32m+[m[32m        "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT[m
+[32m+[m[32m        LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A[m
+[32m+[m[32m        PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT[m
+[32m+[m[32m        HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,[m
+[32m+[m[32m        SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED[m
+[32m+[m[32m        TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR[m
+[32m+[m[32m        PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF[m
+[32m+[m[32m        LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING[m
+[32m+[m[32m        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS[m
+[32m+[m[32m        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.[m
+[32m+[m[32mLicense-File: LICENSE.rst[m
+[32m+[m[32mClassifier: Development Status :: 5 - Production/Stable[m
+[32m+[m[32mClassifier: Environment :: Web Environment[m
+[32m+[m[32mClassifier: Intended Audience :: Developers[m
+[32m+[m[32mClassifier: License :: OSI Approved :: BSD License[m
+[32m+[m[32mClassifier: Operating System :: OS Independent[m
+[32m+[m[32mClassifier: Programming Language :: Python[m
+[32m+[m[32mClassifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content[m
+[32m+[m[32mClassifier: Topic :: Internet :: WWW/HTTP :: WSGI[m
+[32m+[m[32mClassifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application[m
+[32m+[m[32mClassifier: Topic :: Software Development :: Libraries :: Application Frameworks[m
+[32m+[m[32mRequires-Python: >=3.8[m
+[32m+[m[32mRequires-Dist: flask[m
+[32m+[m[32mRequires-Dist: itsdangerous[m
+[32m+[m[32mRequires-Dist: wtforms[m
+[32m+[m[32mProvides-Extra: email[m
+[32m+[m[32mRequires-Dist: email-validator; extra == 'email'[m
+[32m+[m[32mDescription-Content-Type: text/x-rst[m
+[32m+[m
+[32m+[m[32mFlask-WTF[m
+[32m+[m[32m=========[m
+[32m+[m
+[32m+[m[32mSimple integration of Flask and WTForms, including CSRF, file upload,[m
+[32m+[m[32mand reCAPTCHA.[m
+[32m+[m
+[32m+[m[32mLinks[m
+[32m+[m[32m-----[m
+[32m+[m
+[32m+[m[32m-   Documentation: https://flask-wtf.readthedocs.io/[m
+[32m+[m[32m-   Changes: https://flask-wtf.readthedocs.io/changes/[m
+[32m+[m[32m-   PyPI Releases: https://pypi.org/project/Flask-WTF/[m
+[32m+[m[32m-   Source Code: https://github.com/wtforms/flask-wtf/[m
+[32m+[m[32m-   Issue Tracker: https://github.com/wtforms/flask-wtf/issues/[m
+[32m+[m[32m-   Chat: https://discord.gg/pallets[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/RECORD b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/RECORD[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f00dee1[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/RECORD[m
+[36m@@ -0,0 +1,26 @@[m
+[32m+[m[32mflask_wtf-1.2.1.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4[m[41m[m
+[32m+[m[32mflask_wtf-1.2.1.dist-info/METADATA,sha256=9Y5upDJ7WU2m2l4erWImF3HcVSWIZKH3TdX6klYpq4M,3373[m[41m[m
+[32m+[m[32mflask_wtf-1.2.1.dist-info/RECORD,,[m[41m[m
+[32m+[m[32mflask_wtf-1.2.1.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0[m[41m[m
+[32m+[m[32mflask_wtf-1.2.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87[m[41m[m
+[32m+[m[32mflask_wtf-1.2.1.dist-info/licenses/LICENSE.rst,sha256=1fGQNkUVeMs27u8EyZ6_fXyi5w3PBDY2UZvEIOFafGI,1475[m[41m[m
+[32m+[m[32mflask_wtf/__init__.py,sha256=x6ydw5SJzsXZgz-Y6IM_95Sy8VufRepvZH1DUIlFoTo,214[m[41m[m
+[32m+[m[32mflask_wtf/__pycache__/__init__.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mflask_wtf/__pycache__/_compat.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mflask_wtf/__pycache__/csrf.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mflask_wtf/__pycache__/file.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mflask_wtf/__pycache__/form.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mflask_wtf/__pycache__/i18n.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mflask_wtf/_compat.py,sha256=N3sqC9yzFWY-3MZ7QazX1sidvkO3d5yy4NR6lkp0s94,248[m[41m[m
+[32m+[m[32mflask_wtf/csrf.py,sha256=O-fjnWygxxi_FsIU2koua97ZpIhiOJVDHA57dXLpvTA,10171[m[41m[m
+[32m+[m[32mflask_wtf/file.py,sha256=AsfkYTCgtqGWySimc_NjeAxg-DtpdcthhqMLrXIDAhU,4706[m[41m[m
+[32m+[m[32mflask_wtf/form.py,sha256=TmR7xCrxin2LHp6thn7fq1OeU8aLB7xsZzvv52nH7Ss,4049[m[41m[m
+[32m+[m[32mflask_wtf/i18n.py,sha256=TyO8gqt9DocHMSaNhj0KKgxoUrPYs-G1nVW-jns0SOw,1166[m[41m[m
+[32m+[m[32mflask_wtf/recaptcha/__init__.py,sha256=m4eNGoU3Q0Wnt_wP8VvOlA0mwWuoMtAcK9pYT7sPFp8,106[m[41m[m
+[32m+[m[32mflask_wtf/recaptcha/__pycache__/__init__.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mflask_wtf/recaptcha/__pycache__/fields.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mflask_wtf/recaptcha/__pycache__/validators.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mflask_wtf/recaptcha/__pycache__/widgets.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mflask_wtf/recaptcha/fields.py,sha256=M1-RFuUKOsJAzsLm3xaaxuhX2bB9oRqS-HVSN-NpkmI,433[m[41m[m
+[32m+[m[32mflask_wtf/recaptcha/validators.py,sha256=3sd1mUQT3Y3D_WJeKwecxUGstnhh_QD-A_dEBJfkf6s,2434[m[41m[m
+[32m+[m[32mflask_wtf/recaptcha/widgets.py,sha256=J_XyxAZt3uB15diIMnkXXGII2dmsWCsVsKV3KQYn4Ns,1512[m[41m[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/REQUESTED b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/REQUESTED[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/WHEEL b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/WHEEL[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ba1a8af[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/WHEEL[m
+[36m@@ -0,0 +1,4 @@[m
+[32m+[m[32mWheel-Version: 1.0[m
+[32m+[m[32mGenerator: hatchling 1.18.0[m
+[32m+[m[32mRoot-Is-Purelib: true[m
+[32m+[m[32mTag: py3-none-any[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/licenses/LICENSE.rst b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/licenses/LICENSE.rst[m
+[1mnew file mode 100644[m
+[1mindex 0000000..63c3617[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf-1.2.1.dist-info/licenses/LICENSE.rst[m
+[36m@@ -0,0 +1,28 @@[m
+[32m+[m[32mCopyright 2010 WTForms[m
+[32m+[m
+[32m+[m[32mRedistribution and use in source and binary forms, with or without[m
+[32m+[m[32mmodification, are permitted provided that the following conditions are[m
+[32m+[m[32mmet:[m
+[32m+[m
+[32m+[m[32m1.  Redistributions of source code must retain the above copyright[m
+[32m+[m[32m    notice, this list of conditions and the following disclaimer.[m
+[32m+[m
+[32m+[m[32m2.  Redistributions in binary form must reproduce the above copyright[m
+[32m+[m[32m    notice, this list of conditions and the following disclaimer in the[m
+[32m+[m[32m    documentation and/or other materials provided with the distribution.[m
+[32m+[m
+[32m+[m[32m3.  Neither the name of the copyright holder nor the names of its[m
+[32m+[m[32m    contributors may be used to endorse or promote products derived from[m
+[32m+[m[32m    this software without specific prior written permission.[m
+[32m+[m
+[32m+[m[32mTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS[m
+[32m+[m[32m"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT[m
+[32m+[m[32mLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A[m
+[32m+[m[32mPARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT[m
+[32m+[m[32mHOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,[m
+[32m+[m[32mSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED[m
+[32m+[m[32mTO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR[m
+[32m+[m[32mPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF[m
+[32m+[m[32mLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING[m
+[32m+[m[32mNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS[m
+[32m+[m[32mSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/__init__.py b/entorno/lib/python3.10/site-packages/flask_wtf/__init__.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..be2649e[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf/__init__.py[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32mfrom .csrf import CSRFProtect[m
+[32m+[m[32mfrom .form import FlaskForm[m
+[32m+[m[32mfrom .form import Form[m
+[32m+[m[32mfrom .recaptcha import Recaptcha[m
+[32m+[m[32mfrom .recaptcha import RecaptchaField[m
+[32m+[m[32mfrom .recaptcha import RecaptchaWidget[m
+[32m+[m
+[32m+[m[32m__version__ = "1.2.1"[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/__init__.cpython-310.pyc b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/__init__.cpython-310.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3c9b4c1[m
+Binary files /dev/null and b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/__init__.cpython-310.pyc differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/_compat.cpython-310.pyc b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/_compat.cpython-310.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..33f4edd[m
+Binary files /dev/null and b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/_compat.cpython-310.pyc differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/csrf.cpython-310.pyc b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/csrf.cpython-310.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a4994f5[m
+Binary files /dev/null and b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/csrf.cpython-310.pyc differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/file.cpython-310.pyc b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/file.cpython-310.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5e6df85[m
+Binary files /dev/null and b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/file.cpython-310.pyc differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/form.cpython-310.pyc b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/form.cpython-310.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..32c6b8a[m
+Binary files /dev/null and b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/form.cpython-310.pyc differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/i18n.cpython-310.pyc b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/i18n.cpython-310.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..794df92[m
+Binary files /dev/null and b/entorno/lib/python3.10/site-packages/flask_wtf/__pycache__/i18n.cpython-310.pyc differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/_compat.py b/entorno/lib/python3.10/site-packages/flask_wtf/_compat.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..50973e0[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf/_compat.py[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32mimport warnings[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass FlaskWTFDeprecationWarning(DeprecationWarning):[m
+[32m+[m[32m    pass[m
+[32m+[m
+[32m+[m
+[32m+[m[32mwarnings.simplefilter("always", FlaskWTFDeprecationWarning)[m
+[32m+[m[32mwarnings.filterwarnings([m
+[32m+[m[32m    "ignore", category=FlaskWTFDeprecationWarning, module="wtforms|flask_wtf"[m
+[32m+[m[32m)[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/csrf.py b/entorno/lib/python3.10/site-packages/flask_wtf/csrf.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..06afa0c[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf/csrf.py[m
+[36m@@ -0,0 +1,329 @@[m
+[32m+[m[32mimport hashlib[m
+[32m+[m[32mimport hmac[m
+[32m+[m[32mimport logging[m
+[32m+[m[32mimport os[m
+[32m+[m[32mfrom urllib.parse import urlparse[m
+[32m+[m
+[32m+[m[32mfrom flask import Blueprint[m
+[32m+[m[32mfrom flask import current_app[m
+[32m+[m[32mfrom flask import g[m
+[32m+[m[32mfrom flask import request[m
+[32m+[m[32mfrom flask import session[m
+[32m+[m[32mfrom itsdangerous import BadData[m
+[32m+[m[32mfrom itsdangerous import SignatureExpired[m
+[32m+[m[32mfrom itsdangerous import URLSafeTimedSerializer[m
+[32m+[m[32mfrom werkzeug.exceptions import BadRequest[m
+[32m+[m[32mfrom wtforms import ValidationError[m
+[32m+[m[32mfrom wtforms.csrf.core import CSRF[m
+[32m+[m
+[32m+[m[32m__all__ = ("generate_csrf", "validate_csrf", "CSRFProtect")[m
+[32m+[m[32mlogger = logging.getLogger(__name__)[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef generate_csrf(secret_key=None, token_key=None):[m
+[32m+[m[32m    """Generate a CSRF token. The token is cached for a request, so multiple[m
+[32m+[m[32m    calls to this function will generate the same token.[m
+[32m+[m
+[32m+[m[32m    During testing, it might be useful to access the signed token in[m
+[32m+[m[32m    ``g.csrf_token`` and the raw token in ``session['csrf_token']``.[m
+[32m+[m
+[32m+[m[32m    :param secret_key: Used to securely sign the token. Default is[m
+[32m+[m[32m        ``WTF_CSRF_SECRET_KEY`` or ``SECRET_KEY``.[m
+[32m+[m[32m    :param token_key: Key where token is stored in session for comparison.[m
+[32m+[m[32m        Default is ``WTF_CSRF_FIELD_NAME`` or ``'csrf_token'``.[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    secret_key = _get_config([m
+[32m+[m[32m        secret_key,[m
+[32m+[m[32m        "WTF_CSRF_SECRET_KEY",[m
+[32m+[m[32m        current_app.secret_key,[m
+[32m+[m[32m        message="A secret key is required to use CSRF.",[m
+[32m+[m[32m    )[m
+[32m+[m[32m    field_name = _get_config([m
+[32m+[m[32m        token_key,[m
+[32m+[m[32m        "WTF_CSRF_FIELD_NAME",[m
+[32m+[m[32m        "csrf_token",[m
+[32m+[m[32m        message="A field name is required to use CSRF.",[m
+[32m+[m[32m    )[m
+[32m+[m
+[32m+[m[32m    if field_name not in g:[m
+[32m+[m[32m        s = URLSafeTimedSerializer(secret_key, salt="wtf-csrf-token")[m
+[32m+[m
+[32m+[m[32m        if field_name not in session:[m
+[32m+[m[32m            session[field_name] = hashlib.sha1(os.urandom(64)).hexdigest()[m
+[32m+[m
+[32m+[m[32m        try:[m
+[32m+[m[32m            token = s.dumps(session[field_name])[m
+[32m+[m[32m        except TypeError:[m
+[32m+[m[32m            session[field_name] = hashlib.sha1(os.urandom(64)).hexdigest()[m
+[32m+[m[32m            token = s.dumps(session[field_name])[m
+[32m+[m
+[32m+[m[32m        setattr(g, field_name, token)[m
+[32m+[m
+[32m+[m[32m    return g.get(field_name)[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef validate_csrf(data, secret_key=None, time_limit=None, token_key=None):[m
+[32m+[m[32m    """Check if the given data is a valid CSRF token. This compares the given[m
+[32m+[m[32m    signed token to the one stored in the session.[m
+[32m+[m
+[32m+[m[32m    :param data: The signed CSRF token to be checked.[m
+[32m+[m[32m    :param secret_key: Used to securely sign the token. Default is[m
+[32m+[m[32m        ``WTF_CSRF_SECRET_KEY`` or ``SECRET_KEY``.[m
+[32m+[m[32m    :param time_limit: Number of seconds that the token is valid. Default is[m
+[32m+[m[32m        ``WTF_CSRF_TIME_LIMIT`` or 3600 seconds (60 minutes).[m
+[32m+[m[32m    :param token_key: Key where token is stored in session for comparison.[m
+[32m+[m[32m        Default is ``WTF_CSRF_FIELD_NAME`` or ``'csrf_token'``.[m
+[32m+[m
+[32m+[m[32m    :raises ValidationError: Contains the reason that validation failed.[m
+[32m+[m
+[32m+[m[32m    .. versionchanged:: 0.14[m
+[32m+[m[32m        Raises ``ValidationError`` with a specific error message rather than[m
+[32m+[m[32m        returning ``True`` or ``False``.[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    secret_key = _get_config([m
+[32m+[m[32m        secret_key,[m
+[32m+[m[32m        "WTF_CSRF_SECRET_KEY",[m
+[32m+[m[32m        current_app.secret_key,[m
+[32m+[m[32m        message="A secret key is required to use CSRF.",[m
+[32m+[m[32m    )[m
+[32m+[m[32m    field_name = _get_config([m
+[32m+[m[32m        token_key,[m
+[32m+[m[32m        "WTF_CSRF_FIELD_NAME",[m
+[32m+[m[32m        "csrf_token",[m
+[32m+[m[32m        message="A field name is required to use CSRF.",[m
+[32m+[m[32m    )[m
+[32m+[m[32m    time_limit = _get_config(time_limit, "WTF_CSRF_TIME_LIMIT", 3600, required=False)[m
+[32m+[m
+[32m+[m[32m    if not data:[m
+[32m+[m[32m        raise ValidationError("The CSRF token is missing.")[m
+[32m+[m
+[32m+[m[32m    if field_name not in session:[m
+[32m+[m[32m        raise ValidationError("The CSRF session token is missing.")[m
+[32m+[m
+[32m+[m[32m    s = URLSafeTimedSerializer(secret_key, salt="wtf-csrf-token")[m
+[32m+[m
+[32m+[m[32m    try:[m
+[32m+[m[32m        token = s.loads(data, max_age=time_limit)[m
+[32m+[m[32m    except SignatureExpired as e:[m
+[32m+[m[32m        raise ValidationError("The CSRF token has expired.") from e[m
+[32m+[m[32m    except BadData as e:[m
+[32m+[m[32m        raise ValidationError("The CSRF token is invalid.") from e[m
+[32m+[m
+[32m+[m[32m    if not hmac.compare_digest(session[field_name], token):[m
+[32m+[m[32m        raise ValidationError("The CSRF tokens do not match.")[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef _get_config([m
+[32m+[m[32m    value, config_name, default=None, required=True, message="CSRF is not configured."[m
+[32m+[m[32m):[m
+[32m+[m[32m    """Find config value based on provided value, Flask config, and default[m
+[32m+[m[32m    value.[m
+[32m+[m
+[32m+[m[32m    :param value: already provided config value[m
+[32m+[m[32m    :param config_name: Flask ``config`` key[m
+[32m+[m[32m    :param default: default value if not provided or configured[m
+[32m+[m[32m    :param required: whether the value must not be ``None``[m
+[32m+[m[32m    :param message: error message if required config is not found[m
+[32m+[m[32m    :raises KeyError: if required config is not found[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    if value is None:[m
+[32m+[m[32m        value = current_app.config.get(config_name, default)[m
+[32m+[m
+[32m+[m[32m    if required and value is None:[m
+[32m+[m[32m        raise RuntimeError(message)[m
+[32m+[m
+[32m+[m[32m    return value[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass _FlaskFormCSRF(CSRF):[m
+[32m+[m[32m    def setup_form(self, form):[m
+[32m+[m[32m        self.meta = form.meta[m
+[32m+[m[32m        return super().setup_form(form)[m
+[32m+[m
+[32m+[m[32m    def generate_csrf_token(self, csrf_token_field):[m
+[32m+[m[32m        return generate_csrf([m
+[32m+[m[32m            secret_key=self.meta.csrf_secret, token_key=self.meta.csrf_field_name[m
+[32m+[m[32m        )[m
+[32m+[m
+[32m+[m[32m    def validate_csrf_token(self, form, field):[m
+[32m+[m[32m        if g.get("csrf_valid", False):[m
+[32m+[m[32m            # already validated by CSRFProtect[m
+[32m+[m[32m            return[m
+[32m+[m
+[32m+[m[32m        try:[m
+[32m+[m[32m            validate_csrf([m
+[32m+[m[32m                field.data,[m
+[32m+[m[32m                self.meta.csrf_secret,[m
+[32m+[m[32m                self.meta.csrf_time_limit,[m
+[32m+[m[32m                self.meta.csrf_field_name,[m
+[32m+[m[32m            )[m
+[32m+[m[32m        except ValidationError as e:[m
+[32m+[m[32m            logger.info(e.args[0])[m
+[32m+[m[32m            raise[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass CSRFProtect:[m
+[32m+[m[32m    """Enable CSRF protection globally for a Flask app.[m
+[32m+[m
+[32m+[m[32m    ::[m
+[32m+[m
+[32m+[m[32m        app = Flask(__name__)[m
+[32m+[m[32m        csrf = CSRFProtect(app)[m
+[32m+[m
+[32m+[m[32m    Checks the ``csrf_token`` field sent with forms, or the ``X-CSRFToken``[m
+[32m+[m[32m    header sent with JavaScript requests. Render the token in templates using[m
+[32m+[m[32m    ``{{ csrf_token() }}``.[m
+[32m+[m
+[32m+[m[32m    See the :ref:`csrf` documentation.[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    def __init__(self, app=None):[m
+[32m+[m[32m        self._exempt_views = set()[m
+[32m+[m[32m        self._exempt_blueprints = set()[m
+[32m+[m
+[32m+[m[32m        if app:[m
+[32m+[m[32m            self.init_app(app)[m
+[32m+[m
+[32m+[m[32m    def init_app(self, app):[m
+[32m+[m[32m        app.extensions["csrf"] = self[m
+[32m+[m
+[32m+[m[32m        app.config.setdefault("WTF_CSRF_ENABLED", True)[m
+[32m+[m[32m        app.config.setdefault("WTF_CSRF_CHECK_DEFAULT", True)[m
+[32m+[m[32m        app.config["WTF_CSRF_METHODS"] = set([m
+[32m+[m[32m            app.config.get("WTF_CSRF_METHODS", ["POST", "PUT", "PATCH", "DELETE"])[m
+[32m+[m[32m        )[m
+[32m+[m[32m        app.config.setdefault("WTF_CSRF_FIELD_NAME", "csrf_token")[m
+[32m+[m[32m        app.config.setdefault("WTF_CSRF_HEADERS", ["X-CSRFToken", "X-CSRF-Token"])[m
+[32m+[m[32m        app.config.setdefault("WTF_CSRF_TIME_LIMIT", 3600)[m
+[32m+[m[32m        app.config.setdefault("WTF_CSRF_SSL_STRICT", True)[m
+[32m+[m
+[32m+[m[32m        app.jinja_env.globals["csrf_token"] = generate_csrf[m
+[32m+[m[32m        app.context_processor(lambda: {"csrf_token": generate_csrf})[m
+[32m+[m
+[32m+[m[32m        @app.before_request[m
+[32m+[m[32m        def csrf_protect():[m
+[32m+[m[32m            if not app.config["WTF_CSRF_ENABLED"]:[m
+[32m+[m[32m                return[m
+[32m+[m
+[32m+[m[32m            if not app.config["WTF_CSRF_CHECK_DEFAULT"]:[m
+[32m+[m[32m                return[m
+[32m+[m
+[32m+[m[32m            if request.method not in app.config["WTF_CSRF_METHODS"]:[m
+[32m+[m[32m                return[m
+[32m+[m
+[32m+[m[32m            if not request.endpoint:[m
+[32m+[m[32m                return[m
+[32m+[m
+[32m+[m[32m            if app.blueprints.get(request.blueprint) in self._exempt_blueprints:[m
+[32m+[m[32m                return[m
+[32m+[m
+[32m+[m[32m            view = app.view_functions.get(request.endpoint)[m
+[32m+[m[32m            dest = f"{view.__module__}.{view.__name__}"[m
+[32m+[m
+[32m+[m[32m            if dest in self._exempt_views:[m
+[32m+[m[32m                return[m
+[32m+[m
+[32m+[m[32m            self.protect()[m
+[32m+[m
+[32m+[m[32m    def _get_csrf_token(self):[m
+[32m+[m[32m        # find the token in the form data[m
+[32m+[m[32m        field_name = current_app.config["WTF_CSRF_FIELD_NAME"][m
+[32m+[m[32m        base_token = request.form.get(field_name)[m
+[32m+[m
+[32m+[m[32m        if base_token:[m
+[32m+[m[32m            return base_token[m
+[32m+[m
+[32m+[m[32m        # if the form has a prefix, the name will be {prefix}-csrf_token[m
+[32m+[m[32m        for key in request.form:[m
+[32m+[m[32m            if key.endswith(field_name):[m
+[32m+[m[32m                csrf_token = request.form[key][m
+[32m+[m
+[32m+[m[32m                if csrf_token:[m
+[32m+[m[32m                    return csrf_token[m
+[32m+[m
+[32m+[m[32m        # find the token in the headers[m
+[32m+[m[32m        for header_name in current_app.config["WTF_CSRF_HEADERS"]:[m
+[32m+[m[32m            csrf_token = request.headers.get(header_name)[m
+[32m+[m
+[32m+[m[32m            if csrf_token:[m
+[32m+[m[32m                return csrf_token[m
+[32m+[m
+[32m+[m[32m        return None[m
+[32m+[m
+[32m+[m[32m    def protect(self):[m
+[32m+[m[32m        if request.method not in current_app.config["WTF_CSRF_METHODS"]:[m
+[32m+[m[32m            return[m
+[32m+[m
+[32m+[m[32m        try:[m
+[32m+[m[32m            validate_csrf(self._get_csrf_token())[m
+[32m+[m[32m        except ValidationError as e:[m
+[32m+[m[32m            logger.info(e.args[0])[m
+[32m+[m[32m            self._error_response(e.args[0])[m
+[32m+[m
+[32m+[m[32m        if request.is_secure and current_app.config["WTF_CSRF_SSL_STRICT"]:[m
+[32m+[m[32m            if not request.referrer:[m
+[32m+[m[32m                self._error_response("The referrer header is missing.")[m
+[32m+[m
+[32m+[m[32m            good_referrer = f"https://{request.host}/"[m
+[32m+[m
+[32m+[m[32m            if not same_origin(request.referrer, good_referrer):[m
+[32m+[m[32m                self._error_response("The referrer does not match the host.")[m
+[32m+[m
+[32m+[m[32m        g.csrf_valid = True  # mark this request as CSRF valid[m
+[32m+[m
+[32m+[m[32m    def exempt(self, view):[m
+[32m+[m[32m        """Mark a view or blueprint to be excluded from CSRF protection.[m
+[32m+[m
+[32m+[m[32m        ::[m
+[32m+[m
+[32m+[m[32m            @app.route('/some-view', methods=['POST'])[m
+[32m+[m[32m            @csrf.exempt[m
+[32m+[m[32m            def some_view():[m
+[32m+[m[32m                ...[m
+[32m+[m
+[32m+[m[32m        ::[m
+[32m+[m
+[32m+[m[32m            bp = Blueprint(...)[m
+[32m+[m[32m            csrf.exempt(bp)[m
+[32m+[m
+[32m+[m[32m        """[m
+[32m+[m
+[32m+[m[32m        if isinstance(view, Blueprint):[m
+[32m+[m[32m            self._exempt_blueprints.add(view)[m
+[32m+[m[32m            return view[m
+[32m+[m
+[32m+[m[32m        if isinstance(view, str):[m
+[32m+[m[32m            view_location = view[m
+[32m+[m[32m        else:[m
+[32m+[m[32m            view_location = ".".join((view.__module__, view.__name__))[m
+[32m+[m
+[32m+[m[32m        self._exempt_views.add(view_location)[m
+[32m+[m[32m        return view[m
+[32m+[m
+[32m+[m[32m    def _error_response(self, reason):[m
+[32m+[m[32m        raise CSRFError(reason)[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass CSRFError(BadRequest):[m
+[32m+[m[32m    """Raise if the client sends invalid CSRF data with the request.[m
+[32m+[m
+[32m+[m[32m    Generates a 400 Bad Request response with the failure reason by default.[m
+[32m+[m[32m    Customize the response by registering a handler with[m
+[32m+[m[32m    :meth:`flask.Flask.errorhandler`.[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    description = "CSRF validation failed."[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef same_origin(current_uri, compare_uri):[m
+[32m+[m[32m    current = urlparse(current_uri)[m
+[32m+[m[32m    compare = urlparse(compare_uri)[m
+[32m+[m
+[32m+[m[32m    return ([m
+[32m+[m[32m        current.scheme == compare.scheme[m
+[32m+[m[32m        and current.hostname == compare.hostname[m
+[32m+[m[32m        and current.port == compare.port[m
+[32m+[m[32m    )[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/file.py b/entorno/lib/python3.10/site-packages/flask_wtf/file.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a720dff[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf/file.py[m
+[36m@@ -0,0 +1,147 @@[m
+[32m+[m[32mfrom collections import abc[m
+[32m+[m
+[32m+[m[32mfrom werkzeug.datastructures import FileStorage[m
+[32m+[m[32mfrom wtforms import FileField as _FileField[m
+[32m+[m[32mfrom wtforms import MultipleFileField as _MultipleFileField[m
+[32m+[m[32mfrom wtforms.validators import DataRequired[m
+[32m+[m[32mfrom wtforms.validators import StopValidation[m
+[32m+[m[32mfrom wtforms.validators import ValidationError[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass FileField(_FileField):[m
+[32m+[m[32m    """Werkzeug-aware subclass of :class:`wtforms.fields.FileField`."""[m
+[32m+[m
+[32m+[m[32m    def process_formdata(self, valuelist):[m
+[32m+[m[32m        valuelist = (x for x in valuelist if isinstance(x, FileStorage) and x)[m
+[32m+[m[32m        data = next(valuelist, None)[m
+[32m+[m
+[32m+[m[32m        if data is not None:[m
+[32m+[m[32m            self.data = data[m
+[32m+[m[32m        else:[m
+[32m+[m[32m            self.raw_data = ()[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass MultipleFileField(_MultipleFileField):[m
+[32m+[m[32m    """Werkzeug-aware subclass of :class:`wtforms.fields.MultipleFileField`.[m
+[32m+[m
+[32m+[m[32m    .. versionadded:: 1.2.0[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    def process_formdata(self, valuelist):[m
+[32m+[m[32m        valuelist = (x for x in valuelist if isinstance(x, FileStorage) and x)[m
+[32m+[m[32m        data = list(valuelist) or None[m
+[32m+[m
+[32m+[m[32m        if data is not None:[m
+[32m+[m[32m            self.data = data[m
+[32m+[m[32m        else:[m
+[32m+[m[32m            self.raw_data = ()[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass FileRequired(DataRequired):[m
+[32m+[m[32m    """Validates that the uploaded files(s) is a Werkzeug[m
+[32m+[m[32m    :class:`~werkzeug.datastructures.FileStorage` object.[m
+[32m+[m
+[32m+[m[32m    :param message: error message[m
+[32m+[m
+[32m+[m[32m    You can also use the synonym ``file_required``.[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    def __call__(self, form, field):[m
+[32m+[m[32m        field_data = [field.data] if not isinstance(field.data, list) else field.data[m
+[32m+[m[32m        if not ([m
+[32m+[m[32m            all(isinstance(x, FileStorage) and x for x in field_data) and field_data[m
+[32m+[m[32m        ):[m
+[32m+[m[32m            raise StopValidation([m
+[32m+[m[32m                self.message or field.gettext("This field is required.")[m
+[32m+[m[32m            )[m
+[32m+[m
+[32m+[m
+[32m+[m[32mfile_required = FileRequired[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass FileAllowed:[m
+[32m+[m[32m    """Validates that the uploaded file(s) is allowed by a given list of[m
+[32m+[m[32m    extensions or a Flask-Uploads :class:`~flaskext.uploads.UploadSet`.[m
+[32m+[m
+[32m+[m[32m    :param upload_set: A list of extensions or an[m
+[32m+[m[32m        :class:`~flaskext.uploads.UploadSet`[m
+[32m+[m[32m    :param message: error message[m
+[32m+[m
+[32m+[m[32m    You can also use the synonym ``file_allowed``.[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    def __init__(self, upload_set, message=None):[m
+[32m+[m[32m        self.upload_set = upload_set[m
+[32m+[m[32m        self.message = message[m
+[32m+[m
+[32m+[m[32m    def __call__(self, form, field):[m
+[32m+[m[32m        field_data = [field.data] if not isinstance(field.data, list) else field.data[m
+[32m+[m[32m        if not ([m
+[32m+[m[32m            all(isinstance(x, FileStorage) and x for x in field_data) and field_data[m
+[32m+[m[32m        ):[m
+[32m+[m[32m            return[m
+[32m+[m
+[32m+[m[32m        filenames = [f.filename.lower() for f in field_data][m
+[32m+[m
+[32m+[m[32m        for filename in filenames:[m
+[32m+[m[32m            if isinstance(self.upload_set, abc.Iterable):[m
+[32m+[m[32m                if any(filename.endswith("." + x) for x in self.upload_set):[m
+[32m+[m[32m                    continue[m
+[32m+[m
+[32m+[m[32m                raise StopValidation([m
+[32m+[m[32m                    self.message[m
+[32m+[m[32m                    or field.gettext([m
+[32m+[m[32m                        "File does not have an approved extension: {extensions}"[m
+[32m+[m[32m                    ).format(extensions=", ".join(self.upload_set))[m
+[32m+[m[32m                )[m
+[32m+[m
+[32m+[m[32m            if not self.upload_set.file_allowed(field_data, filename):[m
+[32m+[m[32m                raise StopValidation([m
+[32m+[m[32m                    self.message[m
+[32m+[m[32m                    or field.gettext("File does not have an approved extension.")[m
+[32m+[m[32m                )[m
+[32m+[m
+[32m+[m
+[32m+[m[32mfile_allowed = FileAllowed[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass FileSize:[m
+[32m+[m[32m    """Validates that the uploaded file(s) is within a minimum and maximum[m
+[32m+[m[32m    file size (set in bytes).[m
+[32m+[m
+[32m+[m[32m    :param min_size: minimum allowed file size (in bytes). Defaults to 0 bytes.[m
+[32m+[m[32m    :param max_size: maximum allowed file size (in bytes).[m
+[32m+[m[32m    :param message: error message[m
+[32m+[m
+[32m+[m[32m    You can also use the synonym ``file_size``.[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    def __init__(self, max_size, min_size=0, message=None):[m
+[32m+[m[32m        self.min_size = min_size[m
+[32m+[m[32m        self.max_size = max_size[m
+[32m+[m[32m        self.message = message[m
+[32m+[m
+[32m+[m[32m    def __call__(self, form, field):[m
+[32m+[m[32m        field_data = [field.data] if not isinstance(field.data, list) else field.data[m
+[32m+[m[32m        if not ([m
+[32m+[m[32m            all(isinstance(x, FileStorage) and x for x in field_data) and field_data[m
+[32m+[m[32m        ):[m
+[32m+[m[32m            return[m
+[32m+[m
+[32m+[m[32m        for f in field_data:[m
+[32m+[m[32m            file_size = len(f.read())[m
+[32m+[m[32m            f.seek(0)  # reset cursor position to beginning of file[m
+[32m+[m
+[32m+[m[32m            if (file_size < self.min_size) or (file_size > self.max_size):[m
+[32m+[m[32m                # the file is too small or too big => validation failure[m
+[32m+[m[32m                raise ValidationError([m
+[32m+[m[32m                    self.message[m
+[32m+[m[32m                    or field.gettext([m
+[32m+[m[32m                        "File must be between {min_size} and {max_size} bytes.".format([m
+[32m+[m[32m                            min_size=self.min_size, max_size=self.max_size[m
+[32m+[m[32m                        )[m
+[32m+[m[32m                    )[m
+[32m+[m[32m                )[m
+[32m+[m
+[32m+[m
+[32m+[m[32mfile_size = FileSize[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/form.py b/entorno/lib/python3.10/site-packages/flask_wtf/form.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c7f52e0[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf/form.py[m
+[36m@@ -0,0 +1,127 @@[m
+[32m+[m[32mfrom flask import current_app[m
+[32m+[m[32mfrom flask import request[m
+[32m+[m[32mfrom flask import session[m
+[32m+[m[32mfrom markupsafe import Markup[m
+[32m+[m[32mfrom werkzeug.datastructures import CombinedMultiDict[m
+[32m+[m[32mfrom werkzeug.datastructures import ImmutableMultiDict[m
+[32m+[m[32mfrom werkzeug.utils import cached_property[m
+[32m+[m[32mfrom wtforms import Form[m
+[32m+[m[32mfrom wtforms.meta import DefaultMeta[m
+[32m+[m[32mfrom wtforms.widgets import HiddenInput[m
+[32m+[m
+[32m+[m[32mfrom .csrf import _FlaskFormCSRF[m
+[32m+[m
+[32m+[m[32mtry:[m
+[32m+[m[32m    from .i18n import translations[m
+[32m+[m[32mexcept ImportError:[m
+[32m+[m[32m    translations = None  # babel not installed[m
+[32m+[m
+[32m+[m
+[32m+[m[32mSUBMIT_METHODS = {"POST", "PUT", "PATCH", "DELETE"}[m
+[32m+[m[32m_Auto = object()[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass FlaskForm(Form):[m
+[32m+[m[32m    """Flask-specific subclass of WTForms :class:`~wtforms.form.Form`.[m
+[32m+[m
+[32m+[m[32m    If ``formdata`` is not specified, this will use :attr:`flask.request.form`[m
+[32m+[m[32m    and :attr:`flask.request.files`.  Explicitly pass ``formdata=None`` to[m
+[32m+[m[32m    prevent this.[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    class Meta(DefaultMeta):[m
+[32m+[m[32m        csrf_class = _FlaskFormCSRF[m
+[32m+[m[32m        csrf_context = session  # not used, provided for custom csrf_class[m
+[32m+[m
+[32m+[m[32m        @cached_property[m
+[32m+[m[32m        def csrf(self):[m
+[32m+[m[32m            return current_app.config.get("WTF_CSRF_ENABLED", True)[m
+[32m+[m
+[32m+[m[32m        @cached_property[m
+[32m+[m[32m        def csrf_secret(self):[m
+[32m+[m[32m            return current_app.config.get("WTF_CSRF_SECRET_KEY", current_app.secret_key)[m
+[32m+[m
+[32m+[m[32m        @cached_property[m
+[32m+[m[32m        def csrf_field_name(self):[m
+[32m+[m[32m            return current_app.config.get("WTF_CSRF_FIELD_NAME", "csrf_token")[m
+[32m+[m
+[32m+[m[32m        @cached_property[m
+[32m+[m[32m        def csrf_time_limit(self):[m
+[32m+[m[32m            return current_app.config.get("WTF_CSRF_TIME_LIMIT", 3600)[m
+[32m+[m
+[32m+[m[32m        def wrap_formdata(self, form, formdata):[m
+[32m+[m[32m            if formdata is _Auto:[m
+[32m+[m[32m                if _is_submitted():[m
+[32m+[m[32m                    if request.files:[m
+[32m+[m[32m                        return CombinedMultiDict((request.files, request.form))[m
+[32m+[m[32m                    elif request.form:[m
+[32m+[m[32m                        return request.form[m
+[32m+[m[32m                    elif request.is_json:[m
+[32m+[m[32m                        return ImmutableMultiDict(request.get_json())[m
+[32m+[m
+[32m+[m[32m                return None[m
+[32m+[m
+[32m+[m[32m            return formdata[m
+[32m+[m
+[32m+[m[32m        def get_translations(self, form):[m
+[32m+[m[32m            if not current_app.config.get("WTF_I18N_ENABLED", True):[m
+[32m+[m[32m                return super().get_translations(form)[m
+[32m+[m
+[32m+[m[32m            return translations[m
+[32m+[m
+[32m+[m[32m    def __init__(self, formdata=_Auto, **kwargs):[m
+[32m+[m[32m        super().__init__(formdata=formdata, **kwargs)[m
+[32m+[m
+[32m+[m[32m    def is_submitted(self):[m
+[32m+[m[32m        """Consider the form submitted if there is an active request and[m
+[32m+[m[32m        the method is ``POST``, ``PUT``, ``PATCH``, or ``DELETE``.[m
+[32m+[m[32m        """[m
+[32m+[m
+[32m+[m[32m        return _is_submitted()[m
+[32m+[m
+[32m+[m[32m    def validate_on_submit(self, extra_validators=None):[m
+[32m+[m[32m        """Call :meth:`validate` only if the form is submitted.[m
+[32m+[m[32m        This is a shortcut for ``form.is_submitted() and form.validate()``.[m
+[32m+[m[32m        """[m
+[32m+[m[32m        return self.is_submitted() and self.validate(extra_validators=extra_validators)[m
+[32m+[m
+[32m+[m[32m    def hidden_tag(self, *fields):[m
+[32m+[m[32m        """Render the form's hidden fields in one call.[m
+[32m+[m
+[32m+[m[32m        A field is considered hidden if it uses the[m
+[32m+[m[32m        :class:`~wtforms.widgets.HiddenInput` widget.[m
+[32m+[m
+[32m+[m[32m        If ``fields`` are given, only render the given fields that[m
+[32m+[m[32m        are hidden.  If a string is passed, render the field with that[m
+[32m+[m[32m        name if it exists.[m
+[32m+[m
+[32m+[m[32m        .. versionchanged:: 0.13[m
+[32m+[m
+[32m+[m[32m           No longer wraps inputs in hidden div.[m
+[32m+[m[32m           This is valid HTML 5.[m
+[32m+[m
+[32m+[m[32m        .. versionchanged:: 0.13[m
+[32m+[m
+[32m+[m[32m           Skip passed fields that aren't hidden.[m
+[32m+[m[32m           Skip passed names that don't exist.[m
+[32m+[m[32m        """[m
+[32m+[m
+[32m+[m[32m        def hidden_fields(fields):[m
+[32m+[m[32m            for f in fields:[m
+[32m+[m[32m                if isinstance(f, str):[m
+[32m+[m[32m                    f = getattr(self, f, None)[m
+[32m+[m
+[32m+[m[32m                if f is None or not isinstance(f.widget, HiddenInput):[m
+[32m+[m[32m                    continue[m
+[32m+[m
+[32m+[m[32m                yield f[m
+[32m+[m
+[32m+[m[32m        return Markup("\n".join(str(f) for f in hidden_fields(fields or self)))[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef _is_submitted():[m
+[32m+[m[32m    """Consider the form submitted if there is an active request and[m
+[32m+[m[32m    the method is ``POST``, ``PUT``, ``PATCH``, or ``DELETE``.[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    return bool(request) and request.method in SUBMIT_METHODS[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/i18n.py b/entorno/lib/python3.10/site-packages/flask_wtf/i18n.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1cc0e9c[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf/i18n.py[m
+[36m@@ -0,0 +1,47 @@[m
+[32m+[m[32mfrom babel import support[m
+[32m+[m[32mfrom flask import current_app[m
+[32m+[m[32mfrom flask import request[m
+[32m+[m[32mfrom flask_babel import get_locale[m
+[32m+[m[32mfrom wtforms.i18n import messages_path[m
+[32m+[m
+[32m+[m[32m__all__ = ("Translations", "translations")[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef _get_translations():[m
+[32m+[m[32m    """Returns the correct gettext translations.[m
+[32m+[m[32m    Copy from flask-babel with some modifications.[m
+[32m+[m[32m    """[m
+[32m+[m
+[32m+[m[32m    if not request:[m
+[32m+[m[32m        return None[m
+[32m+[m
+[32m+[m[32m    # babel should be in extensions for get_locale[m
+[32m+[m[32m    if "babel" not in current_app.extensions:[m
+[32m+[m[32m        return None[m
+[32m+[m
+[32m+[m[32m    translations = getattr(request, "wtforms_translations", None)[m
+[32m+[m
+[32m+[m[32m    if translations is None:[m
+[32m+[m[32m        translations = support.Translations.load([m
+[32m+[m[32m            messages_path(), [get_locale()], domain="wtforms"[m
+[32m+[m[32m        )[m
+[32m+[m[32m        request.wtforms_translations = translations[m
+[32m+[m
+[32m+[m[32m    return translations[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass Translations:[m
+[32m+[m[32m    def gettext(self, string):[m
+[32m+[m[32m        t = _get_translations()[m
+[32m+[m[32m        return string if t is None else t.ugettext(string)[m
+[32m+[m
+[32m+[m[32m    def ngettext(self, singular, plural, n):[m
+[32m+[m[32m        t = _get_translations()[m
+[32m+[m
+[32m+[m[32m        if t is None:[m
+[32m+[m[32m            return singular if n == 1 else plural[m
+[32m+[m
+[32m+[m[32m        return t.ungettext(singular, plural, n)[m
+[32m+[m
+[32m+[m
+[32m+[m[32mtranslations = Translations()[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__init__.py b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__init__.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3100d37[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__init__.py[m
+[36m@@ -0,0 +1,3 @@[m
+[32m+[m[32mfrom .fields import RecaptchaField[m
+[32m+[m[32mfrom .validators import Recaptcha[m
+[32m+[m[32mfrom .widgets import RecaptchaWidget[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/__init__.cpython-310.pyc b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/__init__.cpython-310.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e076227[m
+Binary files /dev/null and b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/__init__.cpython-310.pyc differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/fields.cpython-310.pyc b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/fields.cpython-310.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9a68018[m
+Binary files /dev/null and b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/fields.cpython-310.pyc differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/validators.cpython-310.pyc b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/validators.cpython-310.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a5d7f28[m
+Binary files /dev/null and b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/validators.cpython-310.pyc differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/widgets.cpython-310.pyc b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/widgets.cpython-310.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..194fa3c[m
+Binary files /dev/null and b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/__pycache__/widgets.cpython-310.pyc differ
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/fields.py b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/fields.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e91fd09[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/fields.py[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32mfrom wtforms.fields import Field[m
+[32m+[m
+[32m+[m[32mfrom . import widgets[m
+[32m+[m[32mfrom .validators import Recaptcha[m
+[32m+[m
+[32m+[m[32m__all__ = ["RecaptchaField"][m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass RecaptchaField(Field):[m
+[32m+[m[32m    widget = widgets.RecaptchaWidget()[m
+[32m+[m
+[32m+[m[32m    # error message if recaptcha validation fails[m
+[32m+[m[32m    recaptcha_error = None[m
+[32m+[m
+[32m+[m[32m    def __init__(self, label="", validators=None, **kwargs):[m
+[32m+[m[32m        validators = validators or [Recaptcha()][m
+[32m+[m[32m        super().__init__(label, validators, **kwargs)[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/validators.py b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/validators.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c5cafb3[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/validators.py[m
+[36m@@ -0,0 +1,75 @@[m
+[32m+[m[32mimport json[m
+[32m+[m[32mfrom urllib import request as http[m
+[32m+[m[32mfrom urllib.parse import urlencode[m
+[32m+[m
+[32m+[m[32mfrom flask import current_app[m
+[32m+[m[32mfrom flask import request[m
+[32m+[m[32mfrom wtforms import ValidationError[m
+[32m+[m
+[32m+[m[32mRECAPTCHA_VERIFY_SERVER_DEFAULT = "https://www.google.com/recaptcha/api/siteverify"[m
+[32m+[m[32mRECAPTCHA_ERROR_CODES = {[m
+[32m+[m[32m    "missing-input-secret": "The secret parameter is missing.",[m
+[32m+[m[32m    "invalid-input-secret": "The secret parameter is invalid or malformed.",[m
+[32m+[m[32m    "missing-input-response": "The response parameter is missing.",[m
+[32m+[m[32m    "invalid-input-response": "The response parameter is invalid or malformed.",[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m__all__ = ["Recaptcha"][m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass Recaptcha:[m
+[32m+[m[32m    """Validates a ReCaptcha."""[m
+[32m+[m
+[32m+[m[32m    def __init__(self, message=None):[m
+[32m+[m[32m        if message is None:[m
+[32m+[m[32m            message = RECAPTCHA_ERROR_CODES["missing-input-response"][m
+[32m+[m[32m        self.message = message[m
+[32m+[m
+[32m+[m[32m    def __call__(self, form, field):[m
+[32m+[m[32m        if current_app.testing:[m
+[32m+[m[32m            return True[m
+[32m+[m
+[32m+[m[32m        if request.is_json:[m
+[32m+[m[32m            response = request.json.get("g-recaptcha-response", "")[m
+[32m+[m[32m        else:[m
+[32m+[m[32m            response = request.form.get("g-recaptcha-response", "")[m
+[32m+[m[32m        remote_ip = request.remote_addr[m
+[32m+[m
+[32m+[m[32m        if not response:[m
+[32m+[m[32m            raise ValidationError(field.gettext(self.message))[m
+[32m+[m
+[32m+[m[32m        if not self._validate_recaptcha(response, remote_ip):[m
+[32m+[m[32m            field.recaptcha_error = "incorrect-captcha-sol"[m
+[32m+[m[32m            raise ValidationError(field.gettext(self.message))[m
+[32m+[m
+[32m+[m[32m    def _validate_recaptcha(self, response, remote_addr):[m
+[32m+[m[32m        """Performs the actual validation."""[m
+[32m+[m[32m        try:[m
+[32m+[m[32m            private_key = current_app.config["RECAPTCHA_PRIVATE_KEY"][m
+[32m+[m[32m        except KeyError:[m
+[32m+[m[32m            raise RuntimeError("No RECAPTCHA_PRIVATE_KEY config set") from None[m
+[32m+[m
+[32m+[m[32m        verify_server = current_app.config.get("RECAPTCHA_VERIFY_SERVER")[m
+[32m+[m[32m        if not verify_server:[m
+[32m+[m[32m            verify_server = RECAPTCHA_VERIFY_SERVER_DEFAULT[m
+[32m+[m
+[32m+[m[32m        data = urlencode([m
+[32m+[m[32m            {"secret": private_key, "remoteip": remote_addr, "response": response}[m
+[32m+[m[32m        )[m
+[32m+[m
+[32m+[m[32m        http_response = http.urlopen(verify_server, data.encode("utf-8"))[m
+[32m+[m
+[32m+[m[32m        if http_response.code != 200:[m
+[32m+[m[32m            return False[m
+[32m+[m
+[32m+[m[32m        json_resp = json.loads(http_response.read())[m
+[32m+[m
+[32m+[m[32m        if json_resp["success"]:[m
+[32m+[m[32m            return True[m
+[32m+[m
+[32m+[m[32m        for error in json_resp.get("error-codes", []):[m
+[32m+[m[32m            if error in RECAPTCHA_ERROR_CODES:[m
+[32m+[m[32m                raise ValidationError(RECAPTCHA_ERROR_CODES[error])[m
+[32m+[m
+[32m+[m[32m        return False[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/widgets.py b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/widgets.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bfae830[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/flask_wtf/recaptcha/widgets.py[m
+[36m@@ -0,0 +1,43 @@[m
+[32m+[m[32mfrom urllib.parse import urlencode[m
+[32m+[m
+[32m+[m[32mfrom flask import current_app[m
+[32m+[m[32mfrom markupsafe import Markup[m
+[32m+[m
+[32m+[m[32mRECAPTCHA_SCRIPT_DEFAULT = "https://www.google.com/recaptcha/api.js"[m
+[32m+[m[32mRECAPTCHA_DIV_CLASS_DEFAULT = "g-recaptcha"[m
+[32m+[m[32mRECAPTCHA_TEMPLATE = """[m
+[32m+[m[32m<script src='%s' async defer></script>[m
+[32m+[m[32m<div class="%s" %s></div>[m
+[32m+[m[32m"""[m
+[32m+[m
+[32m+[m[32m__all__ = ["RecaptchaWidget"][m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass RecaptchaWidget:[m
+[32m+[m[32m    def recaptcha_html(self, public_key):[m
+[32m+[m[32m        html = current_app.config.get("RECAPTCHA_HTML")[m
+[32m+[m[32m        if html:[m
+[32m+[m[32m            return Markup(html)[m
+[32m+[m[32m        params = current_app.config.get("RECAPTCHA_PARAMETERS")[m
+[32m+[m[32m        script = current_app.config.get("RECAPTCHA_SCRIPT")[m
+[32m+[m[32m        if not script:[m
+[32m+[m[32m            script = RECAPTCHA_SCRIPT_DEFAULT[m
+[32m+[m[32m        if params:[m
+[32m+[m[32m            script += "?" + urlencode(params)[m
+[32m+[m[32m        attrs = current_app.config.get("RECAPTCHA_DATA_ATTRS", {})[m
+[32m+[m[32m        attrs["sitekey"] = public_key[m
+[32m+[m[32m        snippet = " ".join(f'data-{k}="{attrs[k]}"' for k in attrs)  # noqa: B028, B907[m
+[32m+[m[32m        div_class = current_app.config.get("RECAPTCHA_DIV_CLASS")[m
+[32m+[m[32m        if not div_class:[m
+[32m+[m[32m            div_class = RECAPTCHA_DIV_CLASS_DEFAULT[m
+[32m+[m[32m        return Markup(RECAPTCHA_TEMPLATE % (script, div_class, snippet))[m
+[32m+[m
+[32m+[m[32m    def __call__(self, field, error=None, **kwargs):[m
+[32m+[m[32m        """Returns the recaptcha input HTML."""[m
+[32m+[m
+[32m+[m[32m        try:[m
+[32m+[m[32m            public_key = current_app.config["RECAPTCHA_PUBLIC_KEY"][m
+[32m+[m[32m        except KeyError:[m
+[32m+[m[32m            raise RuntimeError("RECAPTCHA_PUBLIC_KEY config not set") from None[m
+[32m+[m
+[32m+[m[32m        return self.recaptcha_html(public_key)[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/wtforms-3.1.2.dist-info/INSTALLER b/entorno/lib/python3.10/site-packages/wtforms-3.1.2.dist-info/INSTALLER[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a1b589e[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/wtforms-3.1.2.dist-info/INSTALLER[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mpip[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/wtforms-3.1.2.dist-info/METADATA b/entorno/lib/python3.10/site-packages/wtforms-3.1.2.dist-info/METADATA[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b2846d3[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/wtforms-3.1.2.dist-info/METADATA[m
+[36m@@ -0,0 +1,119 @@[m
+[32m+[m[32mMetadata-Version: 2.1[m
+[32m+[m[32mName: WTForms[m
+[32m+[m[32mVersion: 3.1.2[m
+[32m+[m[32mSummary: Form validation and rendering for Python web development.[m
+[32m+[m[32mProject-URL: Documentation, https://wtforms.readthedocs.io[m
+[32m+[m[32mProject-URL: Changes, https://wtforms.readthedocs.io/changes[m
+[32m+[m[32mProject-URL: Source Code, https://github.com/wtforms/wtforms/[m
+[32m+[m[32mProject-URL: Issue Tracker, https://github.com/wtforms/wtforms/issues[m
+[32m+[m[32mProject-URL: Chat, https://discord.gg/pallets[m
+[32m+[m[32mMaintainer: WTForms[m
+[32m+[m[32mLicense: Copyright 2008 WTForms[m
+[32m+[m[41m        [m
+[32m+[m[32m        Redistribution and use in source and binary forms, with or without[m
+[32m+[m[32m        modification, are permitted provided that the following conditions are[m
+[32m+[m[32m        met:[m
+[32m+[m[41m        [m
+[32m+[m[32m        1.  Redistributions of source code must retain the above copyright[m
+[32m+[m[32m            notice, this list of conditions and the following disclaimer.[m
+[32m+[m[41m        [m
+[32m+[m[32m        2.  Redistributions in binary form must reproduce the above copyright[m
+[32m+[m[32m            notice, this list of conditions and the following disclaimer in the[m
+[32m+[m[32m            documentation and/or other materials provided with the distribution.[m
+[32m+[m[41m        [m
+[32m+[m[32m        3.  Neither the name of the copyright holder nor the names of its[m
+[32m+[m[32m            contributors may be used to endorse or promote products derived from[m
+[32m+[m[32m            this software without specific prior written permission.[m
+[32m+[m[41m        [m
+[32m+[m[32m        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS[m
+[32m+[m[32m        "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT[m
+[32m+[m[32m        LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A[m
+[32m+[m[32m        PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT[m
+[32m+[m[32m        HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,[m
+[32m+[m[32m        SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED[m
+[32m+[m[32m        TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR[m
+[32m+[m[32m        PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF[m
+[32m+[m[32m        LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING[m
+[32m+[m[32m        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS[m
+[32m+[m[32m        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.[m
+[32m+[m[32mLicense-File: LICENSE.rst[m
+[32m+[m[32mClassifier: Development Status :: 5 - Production/Stable[m
+[32m+[m[32mClassifier: Environment :: Web Environment[m
+[32m+[m[32mClassifier: Intended Audience :: Developers[m
+[32m+[m[32mClassifier: License :: OSI Approved :: BSD License[m
+[32m+[m[32mClassifier: Operating System :: OS Independent[m
+[32m+[m[32mClassifier: Programming Language :: Python[m
+[32m+[m[32mClassifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content[m
+[32m+[m[32mRequires-Python: >=3.8[m
+[32m+[m[32mRequires-Dist: markupsafe[m
+[32m+[m[32mProvides-Extra: email[m
+[32m+[m[32mRequires-Dist: email-validator; extra == 'email'[m
+[32m+[m[32mDescription-Content-Type: text/x-rst[m
+[32m+[m
+[32m+[m[32mWTForms[m
+[32m+[m[32m=======[m
+[32m+[m
+[32m+[m[32mWTForms is a flexible forms validation and rendering library for Python[m
+[32m+[m[32mweb development. It can work with whatever web framework and template[m
+[32m+[m[32mengine you choose. It supports data validation, CSRF protection,[m
+[32m+[m[32minternationalization (I18N), and more. There are various community[m
+[32m+[m[32mlibraries that provide closer integration with popular frameworks.[m
+[32m+[m
+[32m+[m
+[32m+[m[32mInstallation[m
+[32m+[m[32m------------[m
+[32m+[m
+[32m+[m[32mInstall and update using pip:[m
+[32m+[m
+[32m+[m[32m.. code-block:: text[m
+[32m+[m
+[32m+[m[32m    pip install -U WTForms[m
+[32m+[m
+[32m+[m
+[32m+[m[32mThird-Party Library Integrations[m
+[32m+[m[32m--------------------------------[m
+[32m+[m
+[32m+[m[32mWTForms is designed to work with any web framework and template engine.[m
+[32m+[m[32mThere are a number of community-provided libraries that make integrating[m
+[32m+[m[32mwith frameworks even better.[m
+[32m+[m
+[32m+[m[32m-   `Flask-WTF`_ integrates with the Flask framework. It can[m
+[32m+[m[32m    automatically load data from the request, uses Flask-Babel to[m
+[32m+[m[32m    translate based on user-selected locale, provides full-application[m
+[32m+[m[32m    CSRF, and more.[m
+[32m+[m[32m-   `WTForms-Alchemy`_ provides rich support for generating forms from[m
+[32m+[m[32m    SQLAlchemy models, including an expanded set of fields and[m
+[32m+[m[32m    validators.[m
+[32m+[m[32m-   `WTForms-SQLAlchemy`_ provides ORM-backed fields and form generation[m
+[32m+[m[32m    from SQLAlchemy models.[m
+[32m+[m[32m-   `WTForms-AppEngine`_ provides ORM-backed fields and form generation[m
+[32m+[m[32m    from AppEnding db/ndb schema[m
+[32m+[m[32m-   `WTForms-Django`_ provides ORM-backed fields and form generation[m
+[32m+[m[32m    from Django models, as well as integration with Django's I18N[m
+[32m+[m[32m    support.[m
+[32m+[m[32m-   `WTForms-Bootstrap5`_ provides Bootstrap 5 favor renderer with[m
+[32m+[m[32m    great customizability.[m
+[32m+[m[32m-   `Starlette-WTF`_ integrates with Starlette and the FastAPI[m
+[32m+[m[32m    framework, based on the features of Flask-WTF.[m
+[32m+[m[32m-   `Bootstrap-Flask`_ Bootstrap-Flask is a collection of Jinja macros[m
+[32m+[m[32m    for Bootstrap 4 & 5 and Flask using Flask-WTF.[m
+[32m+[m
+[32m+[m[32m.. _Flask-WTF: https://flask-wtf.readthedocs.io/[m
+[32m+[m[32m.. _WTForms-Alchemy: https://wtforms-alchemy.readthedocs.io/[m
+[32m+[m[32m.. _WTForms-SQLAlchemy: https://github.com/wtforms/wtforms-sqlalchemy[m
+[32m+[m[32m.. _WTForms-AppEngine: https://github.com/wtforms/wtforms-appengine[m
+[32m+[m[32m.. _WTForms-Django: https://github.com/wtforms/wtforms-django[m
+[32m+[m[32m.. _WTForms-Bootstrap5: https://github.com/LaunchPlatform/wtforms-bootstrap5[m
+[32m+[m[32m.. _Starlette-WTF: https://github.com/muicss/starlette-wtf[m
+[32m+[m[32m.. _Bootstrap-Flask: https://github.com/helloflask/bootstrap-flask[m
+[32m+[m
+[32m+[m
+[32m+[m[32mLinks[m
+[32m+[m[32m-----[m
+[32m+[m
+[32m+[m[32m-   Documentation: https://wtforms.readthedocs.io/[m
+[32m+[m[32m-   Releases: https://pypi.org/project/WTForms/[m
+[32m+[m[32m-   Code: https://github.com/wtforms/wtforms[m
+[32m+[m[32m-   Issue tracker: https://github.com/wtforms/wtforms/issues[m
+[32m+[m[32m-   Discord Chat: https://discord.gg/F65P7Z9[m
+[32m+[m[32m-   Translation: https://hosted.weblate.org/projects/wtforms/wtforms/[m
+[1mdiff --git a/entorno/lib/python3.10/site-packages/wtforms-3.1.2.dist-info/RECORD b/entorno/lib/python3.10/site-packages/wtforms-3.1.2.dist-info/RECORD[m
+[1mnew file mode 100644[m
+[1mindex 0000000..95893a5[m
+[1m--- /dev/null[m
+[1m+++ b/entorno/lib/python3.10/site-packages/wtforms-3.1.2.dist-info/RECORD[m
+[36m@@ -0,0 +1,107 @@[m
+[32m+[m[32mwtforms-3.1.2.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4[m[41m[m
+[32m+[m[32mwtforms-3.1.2.dist-info/METADATA,sha256=5l2xOTJgewLwiItkRaAdSjfYTjkC8ZQOB__88QaNFro,5277[m[41m[m
+[32m+[m[32mwtforms-3.1.2.dist-info/RECORD,,[m[41m[m
+[32m+[m[32mwtforms-3.1.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87[m[41m[m
+[32m+[m[32mwtforms-3.1.2.dist-info/licenses/LICENSE.rst,sha256=z0DWD_NPaytopT0iD4tmVntayN0RGbN7Yv0V6VGP5Zs,1475[m[41m[m
+[32m+[m[32mwtforms/__init__.py,sha256=d-g-y7HGa3aTlDTeTwvAWIADC0ZVeKm0TaM4w2CznXU,188[m[41m[m
+[32m+[m[32mwtforms/__pycache__/__init__.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/__pycache__/form.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/__pycache__/i18n.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/__pycache__/meta.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/__pycache__/utils.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/__pycache__/validators.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/csrf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0[m[41m[m
+[32m+[m[32mwtforms/csrf/__pycache__/__init__.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/csrf/__pycache__/core.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/csrf/__pycache__/session.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/csrf/core.py,sha256=8Ka3ZATvo9I1WqreP1Y_i1r0t7m8Wcw5cKynVvJNXes,3097[m[41m[m
+[32m+[m[32mwtforms/csrf/session.py,sha256=d-roaNYuBxN2QACwkz1_UIuAdtYyTzJTmcJ3UPe1jks,3091[m[41m[m
+[32m+[m[32mwtforms/fields/__init__.py,sha256=Peqt-1SMp4e83FGdjd_imearbY8CYMBHquUC4AHgpkg,435[m[41m[m
+[32m+[m[32mwtforms/fields/__pycache__/__init__.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/fields/__pycache__/choices.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/fields/__pycache__/core.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/fields/__pycache__/datetime.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/fields/__pycache__/form.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/fields/__pycache__/list.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/fields/__pycache__/numeric.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/fields/__pycache__/simple.cpython-310.pyc,,[m[41m[m
+[32m+[m[32mwtforms/fields/choices.py,sha256=zAW-y1s1_sKjNT3qRwWuUKsUrojD9zIR6q5LwfGOwZc,6882[m[41m[m
+[32m+[m[32mwtforms/fields/core.py,sha256=h7rZYkMcKxwOywS0EgQiCJBeoWaATqH3xlQFYVPiABo,14872[m[41m[m
+[32m+[m[32mwtforms/fields/datetime.py,sha256=dYJjDxTAE1LXfzWTML1HPwc1yT0OCA4D42c8FyBgvxk,5010[m[41m[m
+[32m+[m[32mwtforms/fields/form.py,sha256=KsEX4NTQsr3nwULTC2gxbDvC5PQWoLdMdFwsm-l6rW4,2896[m[41m[m
+[32m+[m[32mwtforms/fields/list.py,sha256=htcVonFLsQfo3iibZyvoCBIq9mOr_GHe-85aU3TeflU,6470[m[41m[m
+[32m+[m[32mwtforms/fields/numeric.py,sha256=Y39ODDk9eh6Nctb8gOx26u0ioiChIIUczpxAlK8Vyaw,6157[m[41m[m
+[32m+[m[32mwtforms/fields/simple.py,sha256=VBp8mRT5n3hRMH5ErgIjZtbqRr3jaRv2lZj4NMgs6XY,4075[m[41m[m
+[32m+[m[32mwtforms/form.py,sha256=CsRwZKHup6H4yfBzVlJJqf7PdMy1KTQRrn9BL9kTtqs,12571[m[41m[m
+[32m+[m[32mwtforms/i18n.py,sha256=8AMTTSpQ5d-hONeVN8rt3RH0gRc3Mvl4zUum8Hyif88,1958[m[41m[m
+[32m+[m[32mwtforms/locale/README.md,sha256=Rb-tZdT5rErXDoe9lOmXl8Fj8ZCZPyE9fqpb0kQ2o8Y,1515[m[41m[m
+[32m+[m[32mwtforms/locale/ar/LC_MESSAGES/wtforms.mo,sha256=BsZRqFAlVbme5QMBQ3Q7jNH1_di1oY4GFH3MC0vTyB8,4393[m[41m[m
+[32m+[m[32mwtforms/locale/ar/LC_MESSAGES/wtforms.po,sha256=p0sJ1RMKDcLj6vuy00ZvNcKXxjusvF77Bnq2rRVZGRE,6917[m[41m[m
+[32m+[m[32mwtforms/locale/bg/LC_MESSAGES/wtforms.mo,sha256=zAT_9yG7wGgzn5rxgiDM6cvQSW9rU6V9QbFFsJ6oevg,3932[m[41m[m
+[32m+[m[32mwtforms/locale/bg/LC_MESSAGES/wtforms.po,sha256=317ErIay8SyLoqcDNnGqAVRr3wLB-4IY_TFC8tPDfY4,6532[m[41m[m
+[32m+[m[32mwtforms/locale/ca/LC_MESSAGES/wtforms.mo,sha256=ouKDqnb6fgNf7oPUI3KefGVxj7WfU8pljlpGHyV0Avg,3177[m[41m[m
+[32m+[m[32mwtforms/locale/ca/LC_MESSAGES/wtforms.po,sha256=1vetDbiNdNgbVLDcEIMuvFnCqDw85UNJEOyb9MIXhKI,5691[m[41m[m
+[32m+[m[32mwtforms/locale/cs_CZ/LC_MESSAGES/wtforms.mo,sha256=Q7wmRAxnmfTxaoEfV3w94r-Om5SWYQuEoys0JOVe1H8,3398[m[41m[m
+[32m+[m[32mwtforms/locale/cs_CZ/LC_MESSAGES/wtforms.po,sha256=nEK6qwex37l9vaj_vE-4RopHKfLe2pcNMJH9-foNvh0,5856[m[41m[m
+[32m+[m[32mwtforms/locale/cy/LC_MESSAGES/wtforms.mo,sha256=3TPlrl4k-AEhGtE-2LFCSOqzWOwNrAaL6TIoADGD_J0,3142[m[41m[m
+[32m+[m[32mwtforms/locale/cy/LC_MESSAGES/wtforms.po,sha256=J_y04pZ5y8uVHIj6j0w9MRYIG4S0m6EUTzrPkr6wyZ8,5645[m[41m[m
+[32m+[m[32mwtforms/locale/de/LC_MESSAGES/wtforms.mo,sha256=wR0jvcipBiJt5qVld4CV-ekhFh2fs4PsLEmq_6PaJjQ,3175[m[41m[m
+[32m+[m[32mwtforms/locale/de/LC_MESSAGES/wtforms.po,sha256=lZgIK4DdzhRhXr8VZ7rkBarRcgpwIMtKjEVEAYSvOTE,5685[m[41m[m
+[32m+[m[32mwtforms/locale/de_CH/LC_MESSAGES/wtforms.mo,sha256=zAQC7domVwHEcJlFNfeKEtrcldmnd-KMKGauSb9H_uk,3169[m[41m[m
+[32m+[m[32mwtforms/locale/de_CH/LC_MESSAGES/wtforms.po,sha256=eN9bvLRaMdUrlekpA8s-Bjs7kMZAVKJuwZtGVOoyxWY,5692[m[41m[m
+[32m+[m[32mwtforms/locale/el/LC_MESSAGES/wtforms.mo,sha256=uGu8mNQCoZ0NRB0zO-3ow2RaL5YLsHPTVxAsAatkJHM,3951[m[41m[m
+[32m+[m[32mwtforms/locale/el/LC_MESSAGES/wtforms.po,sha256=_xWxMhVtah6G0emQyLYL7B3TOiUfvikzaFr9WIhd13w,6581[m[41m[m
+[32m+[m[32mwtforms/locale/en/LC_MESSAGES/wtforms.mo,sha256=xtWJicZdwLQRg3xgXPvhLwPbmlot-WS244EnuOVinZ0,3323[m[41m[m
+[32m+[m[32mwtforms/locale/en/LC_MESSAGES/wtforms.po,sha256=Yn7Pb4rFmGxwp3emJW_aAqCBBZZw-E-JTGClfL78DY8,5046[m[41m[m
+[32m+[m[32mwtforms/locale/es/LC_MESSAGES/wtforms.mo,sha256=a6mFAeAHM13rhDMK9P3NcT9d-zNQq4lw6GcOlBUM2jw,3880[m[41m[m
+[32m+[m[32mwtforms/locale/es/LC_MESSAGES/wtforms.po,sha256=fzyvoPb6qCS1lQItflWIYSYEqEG3t4F-FnuxNElaywE,5855[m[41m[m
+[32m+[m[32mwtforms/locale/et/LC_MESSAGES/wtforms.mo,sha256=_32V-6yCSeNVhqd6kaNnJ7pXbkhF9QpNmaYEb14hWEQ,3202[m[41m[m
+[32m+[m[32mwtforms/locale/et/LC_MESSAGES/wtforms.po,sha256=YNsBzM1sBD7ocOI0r7Fvxw4NPMFW5pgURnIZINFknQ8,5704[m[41m[m
+[32m+[m[32mwtforms/locale/fa/LC_MESSAGES/wtforms.mo,sha256=ra-sUT_2WqNyAJ8Rfv990IVqROYjRfkAug7uN3PleXk,3796[m[41m[m
+[32m+[m[32mwtforms/locale/fa/LC_MESSAGES/wtforms.po,sha256=4OoR7G75NIIaLDfbfjfa3Q9kafJUVIlXxpG2QeYVLos,6375[m[41m[m
+[32m+[m[32mwtforms/locale/fi/LC_MESSAGES/wtforms.mo,sha256=OJ6_1yADVNy0S92-Gd-Bv3RmmDRPXsFxAm_EACWH-yM,3152[m[41m[m
+[32m+[m[32mwtforms/locale/fi/LC_MESSAGES/wtforms.po,sha256=tk-LbQudS_s5rMgo2kFzZTSrw--kXhCY-7R8wNREl7M,5659[m[41m[m
+[32m+[m[32mwtforms/locale/fr/LC_MESSAGES/wtforms.mo,sha256=VNGlFMe9qHpLxNBm4x5OUIf3rJ2karLUlPCjS-qGnns,3957[m[41m[m
+[32m+[m[32mwtforms/locale/fr/LC_MESSAGES/wtforms.po,sha256=axI5kDnXjFNuC3B2MHb5OkbLTuTPEJwPsahhDvA6ud0,5991[m[41m[m
+[32m+[m[32mwtforms/locale/he/LC_MESSAGES/wtforms.mo,sha256=gU3A-vpo7qS2WSRrfwb7iOkO7Q8BqujfadHVX5k6rdI,3265[m[41m[m
+[32m+[m[32mwtforms/locale/he/LC_MESSAGE

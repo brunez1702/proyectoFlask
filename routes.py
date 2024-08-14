@@ -1,6 +1,11 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from flask import Blueprint, render_template
 from model import Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado
+=======
+from flask import Blueprint, render_template, request, redirect, url_for, flash
+from model import db, Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado, Venta
+>>>>>>> Stashed changes
 =======
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from model import db, Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado, Venta
@@ -58,7 +63,10 @@ def productos():
     productos = Producto.query.all()
     return render_template('productos.html', productos=productos)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 @bp.route('/productos/crear', methods=['GET', 'POST'])
 def crear_producto():
@@ -74,6 +82,9 @@ def crear_producto():
         return redirect(url_for('lista_productos'))
     categorias = CategoriaProducto.query.all()
     return render_template('crear_producto.html', categorias=categorias)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 @bp.route('/productos/editar/<int:id>', methods=['GET', 'POST'])
@@ -104,7 +115,10 @@ def lista_categorias():
     categorias = CategoriaProducto.query.all()
     return render_template('categorias.html', categorias=categorias)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 @bp.route('/categorias/crear', methods=['GET', 'POST'])
 def crear_categoria():
@@ -179,6 +193,9 @@ def eliminar_venta(id):
     db.session.commit()
     flash('Venta eliminada con éxito', 'success')
     return redirect(url_for('lista_ventas'))
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 # Rutas para Marcas
@@ -222,7 +239,10 @@ def lista_fabricantes():
     fabricantes = Fabricante.query.all()
     return render_template('fabricantes.html', fabricantes=fabricantes)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 @bp.route('/fabricantes/crear', methods=['GET', 'POST'])
 def crear_fabricante():
@@ -235,6 +255,9 @@ def crear_fabricante():
         flash('Fabricante creado con éxito', 'success')
         return redirect(url_for('lista_fabricantes'))
     return render_template('crear_fabricante.html')
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 @bp.route('/fabricantes/editar/<int:id>', methods=['GET', 'POST'])
@@ -262,7 +285,10 @@ def lista_modelos():
     modelos = Modelo.query.all()
     return render_template('modelos.html', modelos=modelos)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 @bp.route('/modelos/crear', methods=['GET', 'POST'])
 def crear_modelo():
@@ -278,6 +304,9 @@ def crear_modelo():
     fabricantes = Fabricante.query.all()
     marcas = Marca.query.all()
     return render_template('crear_modelo.html', fabricantes=fabricantes, marcas=marcas)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 @bp.route('/modelos/editar/<int:id>', methods=['GET', 'POST'])
@@ -308,7 +337,10 @@ def lista_caracteristicas():
     caracteristicas = Caracteristica.query.all()
     return render_template('caracteristicas.html', caracteristicas=caracteristicas)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 @bp.route('/caracteristicas/crear', methods=['GET', 'POST'])
 def crear_caracteristica():
@@ -323,6 +355,9 @@ def crear_caracteristica():
         return redirect(url_for('lista_caracteristicas'))
     modelos = Modelo.query.all()
     return render_template('crear_caracteristica.html', modelos=modelos)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 @bp.route('/caracteristicas/editar/<int:id>', methods=['GET', 'POST'])
@@ -436,7 +471,10 @@ def lista_proveedores():
     proveedores = Proveedor.query.all()
     return render_template('proveedores.html', proveedores=proveedores)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 @bp.route('/proveedores/crear', methods=['GET', 'POST'])
 def crear_proveedor():
@@ -449,6 +487,9 @@ def crear_proveedor():
         flash('Proveedor creado con éxito', 'success')
         return redirect(url_for('lista_proveedores'))
     return render_template('crear_proveedor.html')
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 @bp.route('/proveedores/editar/<int:id>', methods=['GET', 'POST'])
@@ -476,7 +517,10 @@ def lista_accesorios():
     accesorios = Accesorio.query.all()
     return render_template('accesorios.html', accesorios=accesorios)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 @bp.route('/accesorios/crear', methods=['GET', 'POST'])
 def crear_accesorio():
@@ -500,6 +544,9 @@ def editar_accesorio(id):
         flash('Accesorio actualizado con éxito', 'success')
         return redirect(url_for('lista_accesorios'))
     return render_template('editar_accesorio.html', accesorio=accesorio)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 @bp.route('/accesorios/eliminar/<int:id>', methods=['POST'])
@@ -516,7 +563,10 @@ def lista_empleados():
     empleados = Empleado.query.all()
     return render_template('empleados.html', empleados=empleados)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 @bp.route('/empleados/crear', methods=['GET', 'POST'])
 def crear_empleado():
@@ -548,4 +598,7 @@ def eliminar_empleado(id):
     db.session.commit()
     flash('Empleado eliminado con éxito', 'success')
     return redirect(url_for('lista_empleados'))
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

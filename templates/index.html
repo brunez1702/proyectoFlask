@@ -163,6 +163,41 @@
 
 
     <!-- Features Section with Carousel 1 -->
+<<<<<<< Updated upstream
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Modelos Disponibles</h2>
+        <div id="carouselModels" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselModels" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselModels" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselModels" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='images/modelos1.jpg') }}" alt="Modelo 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Encontra los mejores modelos de Samsung</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/modelo2.jpeg') }}" alt="Modelo 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lo ultimo de Xiaomi</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/modelo3.jpeg') }}" alt="Modelo 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Todo de Motorola</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModels" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModels" data-bs-slide="next">
+=======
     <div class="container mt-4">
         <h2 class="text-center mb-4">Modelos Disponibles</h2>
         <div id="carouselModels" class="carousel slide">
@@ -235,11 +270,73 @@
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselAccessories" data-bs-slide="next">
+>>>>>>> Stashed changes
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
+    <!-- Features Section with Carousel 2 -->
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Accesorios</h2>
+        <div id="carouselAccessories" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselAccessories" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselAccessories" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselAccessories" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='images/accesorio1.jpeg') }}" alt="Accesorio 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Todo para tu celular</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/accesorio2.jpeg') }}" alt="Accesorio 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Todo para tu celular</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/accesorio3.jpeg') }}" alt="Accesorio 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Todo para tu celular</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAccessories" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAccessories" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Features Section with Carousel 3 -->
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Ofertas Exclusivas</h2>
+        <div id="carouselOffers" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselOffers" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselOffers" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselOffers" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='images/ofertas.jpeg') }}" alt="Oferta 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>No te pierdas nuestras Ofertas</h5>
+                    </div>
+                </div>
+            </div>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Cell-Store. Todos los derechos reservados.</p>
+    </footer>
 
     <!-- Features Section with Carousel 3 -->
     <div class="container mt-4">
