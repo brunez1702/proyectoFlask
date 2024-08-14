@@ -1,15 +1,5 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-from flask import Blueprint, render_template
-from model import Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado
-=======
-from flask import Blueprint, render_template, request, redirect, url_for, flash
-from model import db, Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado, Venta
->>>>>>> Stashed changes
-=======
-from flask import Blueprint, render_template, request, redirect, url_for, flash
-from model import db, Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado, Venta
->>>>>>> Stashed changes
+from flask import Blueprint, render_template, request, redirect, url_for
+from model import db, Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado
 
 # Crear un Blueprint
 bp = Blueprint('main', __name__)
@@ -26,9 +16,6 @@ def index():
 @bp.route('/usuarios')
 def usuarios():
     usuarios = Usuario.query.all()
-<<<<<<< Updated upstream
-    return render_template('usuarios.html', usuarios=usuarios)
-=======
     return render_template('subitem/usuarios.html', usuarios=usuarios)
 
 @bp.route('/usuarios/agregar', methods=['POST'])
@@ -47,7 +34,7 @@ def editar_usuario(id):
         usuario.nombre = request.form.get('nombre')
         db.session.commit()
         return redirect(url_for('main.usuarios'))
-    return render_template('subitem/crear_usuario.html', usuario=usuario)
+    return render_template('subitem/editar_usuario.html', usuario=usuario)
 
 @bp.route('/usuarios/eliminar/<int:id>', methods=['GET', 'POST'])
 def eliminar_usuario(id):
@@ -55,12 +42,12 @@ def eliminar_usuario(id):
     db.session.delete(usuario)
     db.session.commit()
     return redirect(url_for('main.usuarios'))
->>>>>>> Stashed changes
 
-# Rutas para Productos
 @bp.route('/productos')
 def productos():
     productos = Producto.query.all()
+    return render_template('subitem/productos.html', productos=productos)
+
     return render_template('productos.html', productos=productos)
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -202,7 +189,7 @@ def eliminar_venta(id):
 @bp.route('/marcas')
 def lista_marcas():
     marcas = Marca.query.all()
-    return render_template('marcas.html', marcas=marcas)
+    return render_template('subitem/marcas.html', marcas=marcas)
 
 @bp.route('/marcas/crear', methods=['GET', 'POST'])
 def crear_marca():
@@ -385,7 +372,7 @@ def eliminar_caracteristica(id):
 @bp.route('/equipos')
 def lista_equipos():
     equipos = Equipo.query.all()
-    return render_template('equipos.html', equipos=equipos)
+    return render_template('subitem/equipos.html', equipos=equipos)
 
 @bp.route('/equipos/crear', methods=['GET', 'POST'])
 def crear_equipo():
@@ -428,7 +415,7 @@ def eliminar_equipo(id):
 @bp.route('/stocks')
 def lista_stocks():
     stocks = Stock.query.all()
-    return render_template('stocks.html', stocks=stocks)
+    return render_template('subitem/stocks.html', stocks=stocks)
 
 @bp.route('/stocks/crear', methods=['GET', 'POST'])
 def crear_stock():

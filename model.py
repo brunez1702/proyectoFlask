@@ -1,7 +1,5 @@
-from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-
-db = SQLAlchemy()
+from extensions import db  # Importar db desde extensions.py
 
 class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -28,7 +26,7 @@ class Producto(db.Model):
     def __str__(self):
         return f'{self.nombre} - ${self.precio}'
     
- 
+
 class CategoriaProducto(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(50), nullable=False, unique=True)

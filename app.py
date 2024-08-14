@@ -1,30 +1,18 @@
-from flask import Flask, render_template, redirect, url_for, request
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, render_template
 from flask_migrate import Migrate
-from routes import bp as routes_bp  # Importa el Blueprint desde routes.py
-from model import db , Item
-from forms import ItemForm
-
-
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_secret_key'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-db.init_app(app)
-
-# Crear instancias globales de SQLAlchemy y Migrate
-db = SQLAlchemy()
-migrate = Migrate()
+from extensions import db  # Importar db desde extensions.py
+from routes import bp as routes_bp  # Importar el Blueprint desde routes.py
 
 def create_app():
     app = Flask(__name__)
 
     # Configuración de la base de datos
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     # Inicializar SQLAlchemy y Migrate con la app
     db.init_app(app)
-    migrate.init_app(app, db)
+    migrate = Migrate(app, db)
 
     # Registrar el blueprint de rutas
     app.register_blueprint(routes_bp)  # Registra el blueprint desde routes.py
