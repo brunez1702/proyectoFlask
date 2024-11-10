@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="mb-4">Agregar Fabricante</h1>
+
+        <!-- Mostrar mensajes flash -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert alert-info">
+                    <ul class="list-unstyled mb-0">
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre del Fabricante</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre del fabricante" required>
+                <div class="invalid-feedback">
+                    El nombre del fabricante es obligatorio.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="pais_origen" class="form-label">País de Origen</label>
+                <input type="text" class="form-control" id="pais_origen" name="pais_origen" placeholder="Ingrese el país de origen" required>
+                <div class="invalid-feedback">
+                    El país de origen es obligatorio.
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar Fabricante</button>
+            <a href="{{ url_for('main.fabricantes') }}" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+
+    <!-- Script para validación de formulario -->
+    <script>
+        (function () {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+{% endblock %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producto</title>
+</head>
+<body>
+    <h1>Editar Producto</h1>
+    <form action="/producto/editar/{{ producto.id }}" method="POST">
+        <div>
+            <label for="nombre">Nombre del Producto:</label>
+            <input type="text" id="nombre" name="nombre" value="{{ producto.nombre }}" required>
+        </div>
+        <div>
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" value="{{ producto.precio }}" required>
+        </div>
+        <div>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" value="{{ producto.cantidad }}" required>
+        </div>
+        <div>
+            <label for="categoria_id">Categoría:</label>
+            <select id="categoria_id" name="categoria_id" required>
+                {% for categoria in categorias %}
+                    <option value="{{ categoria.id }}" {% if categoria.id == producto.categoria_id %}selected{% endif %}>{{ categoria.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit">Actualizar Producto</button>
+    </form>
+</body>
+</html>

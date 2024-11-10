@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios</title>
+</head>
+<body>
+    <h1>Lista de Accesorios</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tipo</th>
+                <th>Compatible con</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for accesorio in accesorios %}
+            <tr>
+                <td>{{ accesorio.id }}</td>
+                <td>{{ accesorio.tipo }}</td>
+                <td>{{ accesorio.compatible_con }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('main.index') }}">Volver al inicio</a>
+</body>
+</html>

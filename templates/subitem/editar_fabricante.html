@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="mb-4">Editar Fabricante</h1>
+
+        <!-- Mostrar mensajes flash -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert alert-info">
+                    <ul class="list-unstyled">
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre del Fabricante</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" value="{{ fabricante.nombre }}" placeholder="Ingrese el nombre del fabricante" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="pais_origen" class="form-label">País de Origen</label>
+                <select class="form-select" id="pais_origen" name="pais_origen" required>
+                    <option value="" disabled>Seleccione el país de origen</option>
+                    <option value="Argentina" {% if fabricante.pais_origen == 'Argentina' %}selected{% endif %}>Argentina</option>
+                    <option value="Brasil" {% if fabricante.pais_origen == 'Brasil' %}selected{% endif %}>Brasil</option>
+                    <option value="Chile" {% if fabricante.pais_origen == 'Chile' %}selected{% endif %}>Chile</option>
+                    <option value="Estados Unidos" {% if fabricante.pais_origen == 'Estados Unidos' %}selected{% endif %}>Estados Unidos</option>
+                    <option value="China" {% if fabricante.pais_origen == 'China' %}selected{% endif %}>China</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            <a href="{{ url_for('main.fabricantes') }}" class="btn btn-secondary" onclick="return confirm('¿Seguro que deseas cancelar? Los cambios no se guardarán.')">Cancelar</a>
+        </form>
+    </div>
+{% endblock %}

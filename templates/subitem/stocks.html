@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+</head>
+<body>
+    <h1>Lista de Stock disponible</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Equipo ID</th>
+                <th>Cantidad Disponible</th>
+                <th>Ubicación Almacén</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+            <tr>
+                <td>{{ stock.id }}</td>
+                <td>{{ stock.equipo_id }}</td>
+                <td>{{ stock.cantidad_disponible }}</td>
+                <td>{{ stock.ubicacion_almacen }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('main.index') }}">Volver al inicio</a>
+</body>
+</html>

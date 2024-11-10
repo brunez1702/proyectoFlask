@@ -1,0 +1,36 @@
+/* Estilos para la caja de bienvenida */
+.welcome-box {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 40px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px; /* Espaciado superior */
+    width: 100%; /* Asegura que ocupe el 100% del ancho de su contenedor padre */
+}
+
+/* Estilo para el encabezado */
+.welcome-box h1 {
+    color: #343a40; /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilo para el párrafo */
+.welcome-box p {
+    color: black; /* Color del texto */
+    font-size: 1.25rem; /* Tamaño de fuente más grande */
+}
+
+.h2{
+    margin-top: 20px; 
+}
+
+.carousel-item img {
+    margin-top: 20px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor del carrusel */
+    height: 400px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionar */
+    border-radius: 8px; 
+}
+body{
+    background-color: rgb(222, 218, 218);
+}

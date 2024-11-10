@@ -1,0 +1,45 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías</title>
+</head>
+<body>
+    <h1>Categorías en las que se dividen nuestros Productos</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for categoria in categorias %}
+            <tr>
+                <td>{{ categoria.id }}</td>
+                <td>{{ categoria.nombre }}</td>
+                <td>{{ categoria.descripcion }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('main.index') }}">Volver al inicio</a>
+</body>
+</html>
+=======
+{% extends 'base.html' %}
+
+{% block title %}Categories{% endblock %}
+
+{% block content %}
+<h1>Categories</h1>
+<ul>
+    {% for category in categories %}
+    <li>{{ category.name }}: {{ category.description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+>>>>>>> e83090d04ebdc1bb24daa09c1f0f9eee7a04fcff

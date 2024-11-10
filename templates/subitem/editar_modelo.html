@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Modelo</title>
+</head>
+<body>
+    <h1>Editar Modelo</h1>
+    <form action="/modelo/editar/{{ modelo.id }}" method="POST">
+        <div>
+            <label for="nombre">Nombre del Modelo:</label>
+            <input type="text" id="nombre" name="nombre" value="{{ modelo.nombre }}" required>
+        </div>
+        <div>
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" value="{{ modelo.precio }}" required>
+        </div>
+        <div>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" value="{{ modelo.cantidad }}" required>
+        </div>
+        <div>
+            <label for="fabricante_id">Fabricante:</label>
+            <select id="fabricante_id" name="fabricante_id" required>
+                {% for fabricante in fabricantes %}
+                    <option value="{{ fabricante.id }}" {% if fabricante.id == modelo.fabricante_id %}selected{% endif %}>{{ fabricante.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label for="marca_id">Marca:</label>
+            <select id="marca_id" name="marca_id" required>
+                {% for marca in marcas %}
+                    <option value="{{ marca.id }}" {% if marca.id == modelo.marca_id %}selected{% endif %}>{{ marca.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit">Actualizar Modelo</button>
+    </form>
+</body>
+</html>
