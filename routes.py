@@ -1,6 +1,6 @@
 from flask import Blueprint, flash, render_template, request, redirect, url_for, jsonify
 from extensions import db
-from model import  User, Item, Role,  Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado
+from model import   Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado
 from schemas import UsuarioSchema, ProductoSchema
 from flask_jwt_extended import  jwt_required, get_jwt_identity, create_access_token
 from functools import wraps

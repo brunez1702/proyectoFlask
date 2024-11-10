@@ -1,6 +1,7 @@
 from datetime import datetime
 from extensions import db  # Importar db desde extensions.py
 
+
 class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(50), nullable=False)
@@ -158,7 +159,8 @@ class Accesorio(db.Model):
 class Empleado(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(100), nullable=False)
-    puesto = db.Column(db.String(50), nullable=False)
+    role_id = db.Column(db.Integer, db.ForeignKey('role.id'), nullable=False)
+    role = db.relationship('Role', backref=db.backref('users', lazy=True))
     salario = db.Column(db.Float, nullable=False)
     fecha_contratacion = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
@@ -167,4 +169,24 @@ class Empleado(db.Model):
 
     def __str__(self):
         return f'{self.nombre} - {self.puesto}'
+    
+ # puesto emmpledo db; nombre del puesto y la descripcion de lo q hace en el puesto
+class Role(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), unique=True, nullable=False)
+    description = db.Column(db.String(200), nullable=True)
+
+    # Función para inicializar los roles
+    def init_roles():
+        if Role.query.count() == 0:  # Solo agrega roles si no existen
+            roles = [
+                {'name': 'Admin', 'description': 'Administrador del sistema'},
+                {'name': 'Empleado', 'description': 'Empleado general'},
+                {'name': 'Encargado', 'description': 'Encargado de supervisión'}
+            ]
+            # Agrega cada rol a la base de datos
+            for role_data in roles:
+                role = Role(name=role_data['name'], description=role_data['description'])
+                db.session.add(role)
+            db.session.commit()  # Guarda los cambios
 
