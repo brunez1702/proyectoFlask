@@ -16,18 +16,21 @@
     <form method="POST">
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" value="{{ empleado.nombre }}" required>
+            <input type="text" class="form-control" id="nombre" name="nombre" value="{{ empleado.username }}" required>
         </div>
+        
         <div class="mb-3">
-            <label for="cargo" class="form-label">Cargo</label>
-            <input type="text" class="form-control" id="cargo" name="cargo" value="{{ empleado.cargo }}" required>
+            <label for="role_id" class="form-label">Rol</label>
+            <select class="form-control" id="role_id" name="role_id" required>
+                <option value="">Selecciona un rol</option>
+                {% for role in roles %}
+                    <option value="{{ role.id }}" {% if role.id == empleado.role.id %} selected {% endif %}>{{ role.name }}</option>
+                {% endfor %}
+            </select>
         </div>
-        <div class="mb-3">
-            <label for="fecha_ingreso" class="form-label">Fecha de Ingreso</label>
-            <input type="date" class="form-control" id="fecha_ingreso" name="fecha_ingreso" value="{{ empleado.fecha_ingreso }}" required>
-        </div>
+        
         <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-        <a href="{{ url_for('main.empleados') }}" class="btn btn-secondary">Cancelar</a>
+        <a href="{{ url_for('main.lista_empleados') }}" class="btn btn-secondary">Cancelar</a>
     </form>
 </div>
 

@@ -2,7 +2,7 @@ from flask import Flask, render_template, redirect, url_for
 from flask_migrate import Migrate
 from extensions import db, jwt # Importar db desde extensions.py
 from routes import bp  # Importar el Blueprint desde routes.py
-
+from model import init_roles
 
 def create_app():
     app = Flask(__name__)
@@ -20,6 +20,9 @@ def create_app():
     # Registrar el blueprint de rutas
     app.register_blueprint(bp)  # Registra el blueprint desde routes.py
 
+      # Llamar a init_roles() después de inicializar la base de datos
+    with app.app_context():
+        init_roles() 
 
     @app.route('/')
     def index():

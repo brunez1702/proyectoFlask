@@ -1,13 +1,48 @@
-from flask import Blueprint, request, jsonify
-from flask_jwt_extended import create_access_token, jwt_required
-from flask import Blueprint, render_template, request, redirect, url_for
-from model import db, Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado
+from flask import Blueprint, flash, render_template, request, redirect, url_for, jsonify
+from extensions import db
+from model import  User, Item, Role,  Usuario, Producto, CategoriaProducto, Marca, Fabricante, Modelo, Caracteristica, Equipo, Stock, Proveedor, Accesorio, Empleado
 from schemas import UsuarioSchema, ProductoSchema
-from flask import flash, redirect, url_for
-
+from flask_jwt_extended import  jwt_required, get_jwt_identity, create_access_token
+from functools import wraps
 
 # Crear un Blueprint
 bp = Blueprint('main', __name__)
+
+# Función para verificar si el usuario es Admin
+def admin_required(fn):
+    @wraps(fn)
+    def wrapper(*args, **kwargs):
+        current_user = get_jwt_identity()  # Obtenemos la identidad del JWT
+        user = User.query.filter_by(username=current_user).first()
+        if user and user.role == 'Admin':
+            return fn(*args, **kwargs)
+        else:
+            return jsonify({"message": "Acceso no autorizado"}), 403
+    return wrapper
+
+# Endpoint para obtener todos los objetos de Item (sin restricción)
+@bp.route('/items', methods=['GET'])
+@jwt_required()
+def get_items():
+    items = Item.query.all()
+    result = [{"id": item.id, "name": item.name, "description": item.description} for item in items]
+    return jsonify(result)
+
+# Endpoint para crear un objeto nuevo (solo Admin)
+@bp.route('/items', methods=['POST'])
+@jwt_required()
+@admin_required  # Solo accesible por Admin
+def create_item():
+    data = request.get_json()
+    name = data.get('name')
+    description = data.get('description')
+
+    new_item = Item(name=name, description=description)
+    db.session.add(new_item)
+    db.session.commit()
+
+    return jsonify({"message": "Objeto creado exitosamente"}), 201
+
 
 usuario_schema = UsuarioSchema()
 producto_schema = ProductoSchema()
@@ -20,6 +55,20 @@ def index():
 
 # Rutas para Usuarios
 # Rutas para Usuarios
+
+@bp.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    username = data.get('username')
+    password = data.get('password')
+
+    user = User.query.filter_by(username=username).first()
+    if user and user.password == password:
+        access_token = create_access_token(identity=username)
+        return jsonify(access_token=access_token)
+    
+    return jsonify({"message": "Credenciales inválidas"}), 401
+
 
 @bp.route('/usuarios')
 def usuarios():
@@ -507,29 +556,56 @@ def lista_empleados():
     empleados = Empleado.query.all()
     return render_template('empleados.html', empleados=empleados)
 
-
 @bp.route('/empleados/crear', methods=['GET', 'POST'])
 def crear_empleado():
     if request.method == 'POST':
         nombre = request.form['nombre']
-        puesto = request.form['puesto']
-        nuevo_empleado = Empleado(nombre=nombre, puesto=puesto)
+        puesto = request.form['role_id']  # Esto obtendrá el ID del rol seleccionado
+        
+        # Buscar el rol por ID (ya que el formulario enviará el ID del rol)
+        role = Role.query.get(puesto)
+        
+        if not role:
+            flash('Rol no válido', 'danger')
+            return redirect(url_for('main.crear_empleado'))  # Asegúrate de tener este nombre de ruta
+
+        # Crear el nuevo empleado con el rol seleccionado
+        nuevo_empleado = User(username=nombre, role=role)
         db.session.add(nuevo_empleado)
         db.session.commit()
         flash('Empleado creado con éxito', 'success')
-        return redirect(url_for('lista_empleados'))
-    return render_template('crear_empleado.html')
+        return redirect(url_for('main.lista_empleados'))  # Asegúrate de tener esta ruta también
+    
+    # Obtener todos los roles disponibles para pasarlos al formulario
+    roles = Role.query.all()
+    return render_template('crear_empleado.html', roles=roles)
+
 
 @bp.route('/empleados/editar/<int:id>', methods=['GET', 'POST'])
 def editar_empleado(id):
-    empleado = Empleado.query.get_or_404(id)
+    empleado = User.query.get_or_404(id)
+    
     if request.method == 'POST':
-        empleado.nombre = request.form['nombre']
-        empleado.puesto = request.form['puesto']
+        empleado.username = request.form['nombre']
+        puesto = request.form['role_id']  # Esto obtendrá el ID del rol seleccionado
+        
+        # Buscar el rol por ID (ya que el formulario enviará el ID del rol)
+        role = Role.query.get(puesto)
+        
+        if not role:
+            flash('Rol no válido', 'danger')
+            return redirect(url_for('main.editar_empleado', id=empleado.id))  # Asegúrate de tener este nombre de ruta
+
+        # Actualizar el rol del empleado
+        empleado.role = role
         db.session.commit()
         flash('Empleado actualizado con éxito', 'success')
-        return redirect(url_for('lista_empleados'))
-    return render_template('editar_empleado.html', empleado=empleado)
+        return redirect(url_for('main.lista_empleados'))  # Asegúrate de tener esta ruta también
+    
+    # Obtener todos los roles disponibles para pasarlos al formulario
+    roles = Role.query.all()
+    return render_template('editar_empleado.html', empleado=empleado, roles=roles)
+
 
 @bp.route('/empleados/eliminar/<int:id>', methods=['POST'])
 def eliminar_empleado(id):

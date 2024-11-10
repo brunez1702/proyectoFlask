@@ -26,6 +26,15 @@
             <label for="fecha_ingreso" class="form-label">Fecha de Ingreso</label>
             <input type="date" class="form-control" id="fecha_ingreso" name="fecha_ingreso" required>
         </div>
+        <div class="mb-3">
+            <label for="role_id" class="form-label">Puesto</label>
+            <select class="form-control" id="role_id" name="role_id" required>
+                <option value="">Selecciona un rol</option>
+                {% for role in roles %}
+                    <option value="{{ role.id }}">{{ role.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
         <button type="submit" class="btn btn-primary">Guardar</button>
         <a href="{{ url_for('main.empleados') }}" class="btn btn-secondary">Cancelar</a>
     </form>
