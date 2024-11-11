@@ -4,6 +4,8 @@ from model import   Usuario, Producto, CategoriaProducto, Marca, Fabricante, Mod
 from schemas import UsuarioSchema, ProductoSchema
 from flask_jwt_extended import  jwt_required, get_jwt_identity, create_access_token
 from functools import wraps
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import login_user, logout_user
 
 # Crear un Blueprint
 bp = Blueprint('main', __name__)
@@ -52,24 +54,79 @@ producto_schema = ProductoSchema()
 def index():
     return render_template("index.html")
 
+ #registro
+@bp.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        nombre = request.form['nombre']
+        email = request.form['email']
+        password = request.form['password']
 
-# Rutas para Usuarios
-# Rutas para Usuarios
+        # Hash de la contraseña
+        hashed_password = generate_password_hash(password, method='sha256')
 
-@bp.route('/login', methods=['POST'])
+        # Crear nuevo usuario
+        nuevo_usuario = Usuario(nombre=nombre, email=email, password=hashed_password)
+        db.session.add(nuevo_usuario)
+        db.session.commit()
+
+        flash('Usuario registrado exitosamente!', 'success')
+        return redirect(url_for('login'))  # Redirigir a login después del registro
+
+    return render_template('register.html')  # Formulario de registro
+
+
+ #iniciar sesion con Flask-Login
+@bp.route('/login', methods=['GET', 'POST'])
 def login():
-    data = request.get_json()
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+
+        # Buscar al usuario por el email
+        usuario = Usuario.query.filter_by(email=email).first()
+
+        if usuario and check_password_hash(usuario.password, password):
+            login_user(usuario)  # Iniciar sesión con Flask-Login
+            flash('Has iniciado sesión correctamente', 'success')
+            return redirect(url_for('dashboard'))  # Redirigir a la página de inicio o dashboard
+
+        flash('Credenciales incorrectas', 'danger')  # Mensaje si las credenciales son incorrectas
+
+    return render_template('login.html')  # Formulario de login
+
+#cerrar sesion
+@bp.route('/logout')
+def logout():
+    logout_user()  # Cerrar sesión con Flask-Login
+    flash('Has cerrado sesión', 'success')
+    return redirect(url_for('login'))  # Redirigir a la página de login después de cerrar sesión
+
+
+# iniciar sesion para autenticación con JWT (para APIs)
+@bp.route('/login-api', methods=['POST'])
+def login_api():
+    data = request.get_json()  # Recibe datos JSON
     username = data.get('username')
     password = data.get('password')
 
-    user = User.query.filter_by(username=username).first()
-    if user and user.password == password:
-        access_token = create_access_token(identity=username)
-        return jsonify(access_token=access_token)
-    
-    return jsonify({"message": "Credenciales inválidas"}), 401
+    if not username or not password:
+        return jsonify({"message": "Faltan credenciales"}), 400  # Validación de datos
 
+    # Buscar al usuario por el nombre de usuario
+    user = Usuario.query.filter_by(nombre=username).first()
 
+    if user and check_password_hash(user.password, password):  # Verificar la contraseña
+        # Generar token JWT con expiración de 15 minutos
+        access_token = create_access_token(identity=username, expires_delta=timedelta(minutes=15))
+        return jsonify({
+            'access_token': access_token,
+            'username': user.nombre  # También puedes devolver el nombre del usuario
+        }), 200  # Retornar el token y éxito
+
+    return jsonify({"message": "El usuario o la contraseña son incorrectos"}), 401  # Respuesta de error
+
+# Rutas para Usuarios
 @bp.route('/usuarios')
 def usuarios():
     usuarios = Usuario.query.all()

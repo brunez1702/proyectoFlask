@@ -1,10 +1,12 @@
 from datetime import datetime
 from extensions import db  # Importar db desde extensions.py
+from flask_login import UserMixin
 
-
-class Usuario(db.Model):
+class Usuario(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(50), nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    password = db.Column(db.String(200), nullable=False) 
 
     def __repr__(self):
         return f'<Usuario id={self.id} nombre={self.nombre}>'
@@ -165,28 +167,38 @@ class Empleado(db.Model):
     fecha_contratacion = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
     def __repr__(self):
-        return f'<Empleado id={self.id} nombre={self.nombre} puesto={self.puesto} salario={self.salario}>'
+        return f'<Empleado id={self.id} nombre={self.nombre} role={self.role.name} salario={self.salario}>'
 
     def __str__(self):
-        return f'{self.nombre} - {self.puesto}'
+        return f'{self.nombre} - {self.role.name}'
     
  # puesto emmpledo db; nombre del puesto y la descripcion de lo q hace en el puesto
 class Role(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(50), unique=True, nullable=False)
-    description = db.Column(db.String(200), nullable=True)
+    name = db.Column(db.String(50), nullable=False)
+    description = db.Column(db.String(200), nullable=True)  # Nuevo campo para la descripción
+
+    def __repr__(self):
+        return f'<Role id={self.id} name={self.name} description={self.description}>'
+
+    def __str__(self):
+        return f'{self.name} - {self.description if self.description else "Sin descripción"}'
+
 
     # Función para inicializar los roles
-    def init_roles():
-        if Role.query.count() == 0:  # Solo agrega roles si no existen
-            roles = [
-                {'name': 'Admin', 'description': 'Administrador del sistema'},
-                {'name': 'Empleado', 'description': 'Empleado general'},
-                {'name': 'Encargado', 'description': 'Encargado de supervisión'}
-            ]
-            # Agrega cada rol a la base de datos
-            for role_data in roles:
-                role = Role(name=role_data['name'], description=role_data['description'])
-                db.session.add(role)
-            db.session.commit()  # Guarda los cambios
-
+# Función para inicializar los roles
+def init_roles():
+    if Role.query.count() == 0:  # Solo agrega roles si no existen
+        roles = [
+            {'name': 'Admin', 'description': 'Administrador del sistema'},
+            {'name': 'Empleado', 'description': 'Empleado general'},
+            {'name': 'Encargado', 'description': 'Encargado de supervisión'}
+        ]
+        # Agrega cada rol a la base de datos
+        for role_data in roles:
+            role = Role(name=role_data['name'], description=role_data['description'])
+            db.session.add(role)
+        db.session.commit()  # Guarda los cambios
+        print("Roles inicializados correctamente.")
+    else:
+        print("Los roles ya están inicializados.")
