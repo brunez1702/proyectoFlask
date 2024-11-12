@@ -1,8 +1,8 @@
-"""nuevos cambios
+"""migracion
 
-Revision ID: dcbef4e0052c
-Revises: bc1562d6177f
-Create Date: 2024-07-29 02:17:30.524200
+Revision ID: 11fb2fcff5a1
+Revises: 
+Create Date: 2024-11-12 20:11:22.729845
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'dcbef4e0052c'
-down_revision = 'bc1562d6177f'
+revision = '11fb2fcff5a1'
+down_revision = None
 branch_labels = None
 depends_on = None
 
@@ -31,21 +31,18 @@ def upgrade():
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('nombre')
     )
-    op.create_table('empleado',
-    sa.Column('id', sa.Integer(), nullable=False),
-    sa.Column('nombre', sa.String(length=100), nullable=False),
-    sa.Column('role_id', sa.String(length=50), nullable=False),
-    sa.Column('salario', sa.Float(), nullable=False),
-    sa.Column('fecha_contratacion', sa.DateTime(), nullable=False),
-    sa.ForeignKeyConstraint(['role_id'], ['role.id']),
-    sa.PrimaryKeyConstraint('id')
-    )
     op.create_table('fabricante',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('nombre', sa.String(length=100), nullable=False),
     sa.Column('pais_origen', sa.String(length=50), nullable=False),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('nombre')
+    )
+    op.create_table('item',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('name', sa.String(length=100), nullable=False),
+    sa.Column('description', sa.Text(), nullable=True),
+    sa.PrimaryKeyConstraint('id')
     )
     op.create_table('marca',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -57,6 +54,39 @@ def upgrade():
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('nombre', sa.String(length=100), nullable=False),
     sa.Column('contacto', sa.String(length=100), nullable=False),
+    sa.PrimaryKeyConstraint('id')
+    )
+    op.create_table('role',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('name', sa.String(length=50), nullable=False),
+    sa.Column('description', sa.String(length=200), nullable=True),
+    sa.PrimaryKeyConstraint('id')
+    )
+    op.create_table('user',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('username', sa.String(length=80), nullable=False),
+    sa.Column('password', sa.String(length=100), nullable=False),
+    sa.Column('email', sa.String(length=120), nullable=False),
+    sa.Column('bio', sa.String(length=200), nullable=True),
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('email'),
+    sa.UniqueConstraint('username')
+    )
+    op.create_table('usuario',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('nombre', sa.String(length=50), nullable=False),
+    sa.Column('email', sa.String(length=120), nullable=False),
+    sa.Column('password', sa.String(length=200), nullable=False),
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('email')
+    )
+    op.create_table('empleado',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('nombre', sa.String(length=100), nullable=False),
+    sa.Column('role_id', sa.Integer(), nullable=False),
+    sa.Column('salario', sa.Float(), nullable=False),
+    sa.Column('fecha_contratacion', sa.DateTime(), nullable=False),
+    sa.ForeignKeyConstraint(['role_id'], ['role.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_table('modelo',
@@ -113,13 +143,6 @@ def upgrade():
     sa.ForeignKeyConstraint(['equipo_id'], ['equipo.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
-    op.create_table('role',
-    sa.Column('id', sa.Integer(), nullable=False),
-    sa.Column('nombre', sa.String(length=50), nullable=False),
-    sa.Column('description', sa.String(length=200), nullable=True),
-    sa.PrimaryKeyConstraint('id'),
-    sa.UniqueConstraint('nombre')
-    )
     # ### end Alembic commands ###
 
 
@@ -131,11 +154,14 @@ def downgrade():
     op.drop_table('caracteristica')
     op.drop_table('producto')
     op.drop_table('modelo')
+    op.drop_table('empleado')
+    op.drop_table('usuario')
+    op.drop_table('user')
+    op.drop_table('role')
     op.drop_table('proveedor')
     op.drop_table('marca')
+    op.drop_table('item')
     op.drop_table('fabricante')
-    op.drop_table('empleado')
     op.drop_table('categoria_producto')
     op.drop_table('accesorio')
-    op.drop_table('role')
     # ### end Alembic commands ###
