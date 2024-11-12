@@ -60,7 +60,7 @@ def downgrade():
     op.create_table('empleado',
     sa.Column('id', sa.INTEGER(), nullable=False),
     sa.Column('nombre', sa.VARCHAR(length=100), nullable=False),
-    sa.Column('puesto', sa.VARCHAR(length=50), nullable=False),
+    sa.Column('rol', sa.VARCHAR(length=50), nullable=False),
     sa.Column('salario', sa.FLOAT(), nullable=False),
     sa.Column('fecha_contratacion', sa.DATETIME(), nullable=False),
     sa.PrimaryKeyConstraint('id')

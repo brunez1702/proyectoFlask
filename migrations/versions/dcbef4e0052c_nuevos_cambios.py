@@ -34,9 +34,10 @@ def upgrade():
     op.create_table('empleado',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('nombre', sa.String(length=100), nullable=False),
-    sa.Column('puesto', sa.String(length=50), nullable=False),
+    sa.Column('role_id', sa.String(length=50), nullable=False),
     sa.Column('salario', sa.Float(), nullable=False),
     sa.Column('fecha_contratacion', sa.DateTime(), nullable=False),
+    sa.ForeignKeyConstraint(['role_id'], ['role.id']),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_table('fabricante',
@@ -112,6 +113,13 @@ def upgrade():
     sa.ForeignKeyConstraint(['equipo_id'], ['equipo.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
+    op.create_table('role',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('nombre', sa.String(length=50), nullable=False),
+    sa.Column('description', sa.String(length=200), nullable=True),
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('nombre')
+    )
     # ### end Alembic commands ###
 
 
@@ -129,4 +137,5 @@ def downgrade():
     op.drop_table('empleado')
     op.drop_table('categoria_producto')
     op.drop_table('accesorio')
+    op.drop_table('role')
     # ### end Alembic commands ###

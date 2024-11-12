@@ -2,7 +2,7 @@ from datetime import datetime
 from extensions import db  # Importar db desde extensions.py
 from flask_login import UserMixin
 
-class Usuario(db.Model, UserMixin):
+class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(50), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
@@ -202,3 +202,17 @@ def init_roles():
         print("Roles inicializados correctamente.")
     else:
         print("Los roles ya están inicializados.")
+
+class Item(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    description = db.Column(db.Text, nullable=True)
+
+
+class User(db.Model, UserMixin):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    password = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    bio = db.Column(db.String(200))  # Nuevo campo
+  
