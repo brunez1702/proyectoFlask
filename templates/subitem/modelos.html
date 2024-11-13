@@ -23,10 +23,14 @@
                 <td>{{ modelo.nombre_modelo }}</td>
                 <td>{{ modelo.marca_id }}</td>
                 <td>{{ modelo.fabricante_id }}</td>
+                <td>
+                    <a href="/modelos/editar/{{modelo.id}}" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="/modelos/eliminar/{{modelo.id}}" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
-    <a href="{{ url_for('main.index') }}">Volver al inicio</a>
+    <a href="index">Volver al inicio</a>
 </body>
 </html>

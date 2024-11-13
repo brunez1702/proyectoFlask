@@ -20,11 +20,16 @@
             <tr>
                 <td>{{ empleado.id }}</td>
                 <td>{{ empleado.nombre }}</td>
-                <td>{{ empleado.cargo }}</td>
+                <td>{{ empleado.role }}</td>
+                <td>
+                    <a href="/empleados/editar/{{empleado.id}}" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="/empleados/eliminar/{{empleado.id}}" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
+
             </tr>
             {% endfor %}
         </tbody>
     </table>
-    <a href="{{ url_for('main.index') }}">Volver al inicio</a>
+    <a href="index">Volver al inicio</a>
 </body>
 </html>

@@ -28,8 +28,8 @@
                     <td>{{ usuario.id }}</td>
                     <td>{{ usuario.nombre }}</td>
                     <td>
-                        <a href="{{ url_for('main.editar_usuario', id=usuario.id) }}" class="btn btn-warning btn-sm">Editar</a>
-                        <a href="{{ url_for('main.eliminar_usuario', id=usuario.id) }}" class="btn btn-danger btn-sm">Eliminar</a>
+                        <a href="/usuarios/editar/{{usuario.id}}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="/usuarios/eliminar/{{usuario.id}}" class="btn btn-danger btn-sm">Eliminar</a>
                     </td>
                 </tr>
                 {% endfor %}
@@ -38,7 +38,7 @@
 
         <!-- Formulario para agregar usuario -->
         <h2 class="mt-5">Agregar Usuario</h2>
-        <form method="POST" action="{{ url_for('main.agregar_usuario') }}">
+        <form method="POST" action="/usuario/agregar{{usuario}}">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -46,7 +46,7 @@
             <button type="submit" class="btn btn-primary">Agregar Usuario</button>
         </form>
 
-        <a href="{{ url_for('main.index') }}" class="btn btn-secondary mt-4">Volver al inicio</a>
+        <a href="index" class="btn btn-secondary mt-4">Volver al inicio</a>
     </div>
 
     <!-- Bootstrap JS -->

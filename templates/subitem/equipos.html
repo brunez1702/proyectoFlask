@@ -25,10 +25,14 @@
                 <td>{{ equipo.modelo_id }}</td>
                 <td>${{ equipo.costo }}</td>
                 <td>{{ equipo.stock }}</td>
+                <td>
+                    <a href="/equipos/editar/{{equipo.id}}" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="/equipos/eliminar/{{equipo.id}}" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
-    <a href="{{ url_for('main.index') }}">Volver al inicio</a>
+    <a href="index">Volver al inicio</a>
 </body>
 </html>
