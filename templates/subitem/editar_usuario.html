@@ -13,14 +13,14 @@
 {% block content %}
 <div class="container mt-5">
     <h1 class="mb-4">Editar Usuario</h1>
-    <form action="{{ url_for('main.editar_usuario', id=usuario.id) }}" method="post">
+    <form action="/usuarios/editar/{{usuario.id}}" method="post">
         {{ form.hidden_tag() }} <!-- Para CSRF si usas Flask-WTF -->
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre" value="{{ usuario.nombre }}" required>
         </div>
         <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-        <a href="{{ url_for('main.usuarios') }}" class="btn btn-secondary">Cancelar</a>
+        <a href="usuarios" class="btn btn-secondary">Cancelar</a>
     </form>
 </div>
 

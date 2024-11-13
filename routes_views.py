@@ -148,7 +148,7 @@ def editar_usuario(id):
         db.session.commit()
         flash('Usuario actualizado correctamente', 'success')
         return redirect(url_for('main.usuarios'))
-    return render_template('subitem/editar_usuario.html', usuario=usuario)
+    return render_template('main.usuarios')
 
 @bp.route('/usuarios/eliminar/<int:id>', methods=['GET', 'POST'])
 def eliminar_usuario(id):
